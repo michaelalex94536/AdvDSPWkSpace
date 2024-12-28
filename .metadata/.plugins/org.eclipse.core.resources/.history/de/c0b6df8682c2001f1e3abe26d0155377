@@ -1,0 +1,15 @@
+
+
+#include "sine_generator.h"
+
+
+void sine_gen_init_q15(sine_generator_q15_t *sine_desc,  q15_t sine_freq, q15_t sample_freq)
+{
+	//  Variables to hold intermediate sine values and coefficients
+	float32_t y[4];
+	float32_t coeff4;
+	float32_t coeff5;
+
+	y[0] = 0.0;
+
+}

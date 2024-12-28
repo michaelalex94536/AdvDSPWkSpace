@@ -1,0 +1,7 @@
+23:56:00 **** Incremental Build of configuration Debug for project 6_RealtimeDSP ****
+make -j8 all 
+arm-none-eabi-size  6_RealtimeDSP.elf 
+   text	   data	    bss	    dec	    hex	filename
+  36684	    540	  17780	  55004	   d6dc	6_RealtimeDSP.elf
+Finished building: default.size.stdout
+ 

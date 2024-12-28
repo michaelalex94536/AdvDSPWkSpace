@@ -1,0 +1,17 @@
+20:26:07 **** Incremental Build of configuration Debug for project 2_Q_Usage ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -D__FPU_PRESENT -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DARM_MATH_CM4 -c -I../Inc -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/2_Q_Usage/chip_headers/CMSIS/DSP/Include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/2_Q_Usage/chip_headers/CMSIS/Include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/2_Q_Usage/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "2_Q_Usage.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/2_Q_Usage/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="2_Q_Usage.map" -Wl,--gc-sections -static -L"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/2_Q_Usage/chip_headers/CMSIS/Lib/GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 2_Q_Usage.elf
+ 
+arm-none-eabi-size  2_Q_Usage.elf 
+arm-none-eabi-objdump -h -S 2_Q_Usage.elf  > "2_Q_Usage.list"
+   text	   data	    bss	    dec	    hex	filename
+  25300	    484	   2196	  27980	   6d4c	2_Q_Usage.elf
+Finished building: default.size.stdout
+ 
+Finished building: 2_Q_Usage.list
+ 
+
+20:26:09 Build Finished. 0 errors, 0 warnings. (took 1s.383ms)
+

@@ -1,0 +1,10 @@
+14:58:02 **** Incremental Build of configuration Debug for project 5_CMSIS_Test_Float32 ****
+make -j8 all 
+arm-none-eabi-size  5_CMSIS_Test_Float32.elf 
+   text	   data	    bss	    dec	    hex	filename
+  23644	   1736	   1904	  27284	   6a94	5_CMSIS_Test_Float32.elf
+Finished building: default.size.stdout
+ 
+
+14:58:03 Build Finished. 0 errors, 0 warnings. (took 1s.180ms)
+

@@ -1,0 +1,13 @@
+#ifndef SINE_GENERATOR_H_
+#define SINE_GENERATOR_H_
+
+#include "arm_math.h"
+
+typedef struct
+{
+
+
+
+}sine_generator_q15_t;
+
+#endif /* SINE_GENERATOR_H_ */

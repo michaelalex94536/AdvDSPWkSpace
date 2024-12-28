@@ -1,0 +1,27 @@
+/*
+ * uart.c
+ *
+ *  Created on: Dec 22, 2024
+ *      Author: michael
+ */
+
+#include "uart.h"
+
+// Function to initialize UART2
+void uart2_tx_init(void)
+{
+	/****** [1] Configure UART2 Pins on Port A, PA2 (Tx) and PA3 (Rx) ******/
+	/*  Enable clock access to GPIOA  */
+	/*  Set PA2 mode to alternate function UART_TX (AF07)  */
+	/*  Set PA3 mode to alternate function UART_RX (AF07)  */
+
+	/****** [2] Configure UART  ******/
+	/*  Enable clock access to UART2  */
+	/*  Configure baud rate  */
+	/*  Configure data transfer direction  */
+	/*  Enable UART module */
+
+
+}
+
+

@@ -1,0 +1,16 @@
+/*
+ * lowpassfilter.h
+ *
+ *  Created on: Dec 25, 2024
+ *      Author: michael
+ */
+
+#ifndef LOWPASSFILTER_H_
+#define LOWPASSFILTER_H_
+
+#include "arm_math.h"
+
+q15_t lowpass_filter_state[FILTER_TAPS + FILTER_BLOCK_LEN];
+
+
+#endif /* LOWPASSFILTER_H_ */

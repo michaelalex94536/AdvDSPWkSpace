@@ -1,0 +1,10 @@
+23:07:42 **** Incremental Build of configuration Debug for project 5_Semaphores ****
+make -j8 all 
+arm-none-eabi-size  5_Semaphores.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31996	    480	  17624	  50100	   c3b4	5_Semaphores.elf
+Finished building: default.size.stdout
+ 
+
+23:07:43 Build Finished. 0 errors, 0 warnings. (took 1s.183ms)
+
