@@ -10,6 +10,7 @@
 #define FILTER_TAPS				32
 #define FILTER_BLOCK_LEN		1
 
+
 q15_t low_pass_filter_coeff[FILTER_TAPS] =
 {
 0xFB5C,
@@ -57,7 +58,6 @@ q15_t lowpass_filter_state[FILTER_TAPS + FILTER_BLOCK_LEN];
 
 arm_fir_instance_q15 lowpass_filter_set;
 
-// Initialize the low pass filter
 void lowpass_filter_init(void)
 {
 	arm_fir_init_q15(&lowpass_filter_set,
@@ -67,11 +67,10 @@ void lowpass_filter_init(void)
 						FILTER_BLOCK_LEN);
 }
 
-// Here, low pass filter the noisy signal
 q15_t lowpass_filter_exec(q15_t * input)
 {
 	q15_t out;
-	arm_fir_q15(&lowpass_filter_set, input, &out, FILTER_BLOCK_LEN);
+	arm_fir_q15(&lowpass_filter_set, input,&out, FILTER_BLOCK_LEN);
 
 	return out;
 }

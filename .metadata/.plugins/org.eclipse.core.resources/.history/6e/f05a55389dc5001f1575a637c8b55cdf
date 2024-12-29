@@ -2,11 +2,6 @@
  *
  * 				RealtimeDSP.c
  *
- * 	Here, tasks give and take semaphores.
- * 	Three tasks emulate a typical RTOS DSP scenario. An ARM low pass filter is
- * 	used (defined in "lowpassfilter.c") to remove high frequency noise from a
- * 	noise-corrupted signal.
- *
  */
 
 #include "stm32f4xx.h"
@@ -62,7 +57,6 @@ q15_t corrupt_sig_sample;
 // Post-filtered corrupt signal
 q15_t filtered_sig_sample;
 
-// Convert time in millisec to clock ticks
 const TickType_t _10ms = pdMS_TO_TICKS(10);
 
 int main(void)
@@ -170,8 +164,8 @@ void data_disp_task(void *pvParameters)
 		xSemaphoreTake(xBinarySemaphore, portMAX_DELAY);
 
 		printf("%d\t ", (int)sine_sig_sample);      // Original uncorrupted signal
-		// printf("%d\t", (int)noise_sig_sample);		// Noise signal
-		printf("%d\t", (int)corrupt_sig_sample);	// Noise-corrupted signal (Signal plus noise)
+		printf("%d\t", (int)noise_sig_sample);		// Noisy signal
+		printf("%d\t", (int)corrupt_sig_sample);	// Noise-corrupted signal
 		printf("%d\n\r", (int)filtered_sig_sample); // Post-filtered signal
 
 		Task3_profiler++;
@@ -211,6 +205,8 @@ static void pseudo_dly(int dly)
 {
 	for(int i = 0; i < dly; i++){}
 }
+
+
 
 static void fpu_enable(void)
 {
