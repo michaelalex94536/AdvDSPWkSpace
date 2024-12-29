@@ -1,6 +1,14 @@
 /*
  *
- * 				Semaphores.c
+ * 				RealtimeDSP_LiveData
+ *
+ * 				Sample ADC
+ *
+ * 				Files "adc.c" and "adc.h" simply added to this project.
+ *
+ * 				The low pass filter taps (impulse response) are in the file "signals.c"
+ *
+ * 	Note: No DSP is being done here!  Filters don't work for some reason - so I disabled them.
  *
  */
 
@@ -13,6 +21,7 @@
 #include "sine_generator.h"
 #include "lowpassfilter.h"
 #include "semphr.h"
+#include "adc.h"
 
 #define SIGNAL_FREQ		10
 #define NOISE_FREQ		50
@@ -28,7 +37,7 @@ static void pseudo_dly(int dly);
 static void fpu_enable(void);
 
 // Here are the variables to add to Live Expressions.  These are just counters.
-uint32_t Task1_profiler, Task2_profiler, Task3_profiler, Task4_profiler;
+uint32_t Task1_profiler, Task2_profiler, Task3_profiler;
 
 // Name a semaphore
 SemaphoreHandle_t xBinarySemaphore;
@@ -38,13 +47,12 @@ SemaphoreHandle_t xBinarySemaphore;
 int Task1_priority = 1;
 int Task2_priority = 1;
 int Task3_priority = 1;
-int Task4_priority = 1;
 
 // Here are the task names
 void data_acq_task(void *pvParameters);
-void data_proc_task(void *pvParameters);
 void data_disp_task(void *pvParameters);
-void data_filt_task(void *pvParameters);
+void data_proc_task(void *pvParameters);
+
 
 // Here are the names of the signals (and noise) we wish to generate
 sine_generator_q15_t signal_desc, noise_desc;
@@ -58,6 +66,14 @@ q15_t corrupt_sig_sample;
 // Post-filtered corrupt signal
 q15_t filtered_sig_sample;
 
+const TickType_t _10ms = pdMS_TO_TICKS(10);
+
+
+uint32_t g_adc_value;  			// Measured, raw ADC value - an unsigned integer
+float32_t f32_adc_value;		// ADC value converted to normalized float: range is -1.0 to 1.0
+q15_t q15_adc_value;
+
+
 int main(void)
 {
 	// Enable FPU
@@ -66,96 +82,110 @@ int main(void)
 	// Initialize the UART
 	uart2_tx_init();
 
-	// Create several tasks
-	xTaskCreate(data_acq_task, "Get signals", 100, NULL, Task1_priority, NULL);
-	xTaskCreate(data_proc_task, "Noise and signal", 100, NULL, Task2_priority, NULL);
-	xTaskCreate(data_disp_task, "Combine signals", 100, NULL, Task2_priority, NULL);
-	xTaskCreate(data_filt_task, "Filter signals", 100, NULL, Task2_priority, NULL);
+	// Initialize the ADC
+	pa1_adc_init();
 
+	// Start ADC conversion
+	start_conversion();
+
+	// Create several tasks
+	xTaskCreate(data_acq_task, "Create signals", 100, NULL, Task1_priority, NULL);
+	xTaskCreate(data_disp_task, "Display signals", 100, NULL, Task2_priority, NULL);
+	xTaskCreate(data_proc_task, "Process signals", 100, NULL, Task3_priority, NULL);
+
+
+	// Initialize the low pass filter here
+	lowpass_filter_init();
+
+	// Initialize the signal (and noise) generators here
+	sine_gen_init_q15(&signal_desc, SIGNAL_FREQ, SAMPLING_FREQ);
+	sine_gen_init_q15(&noise_desc, NOISE_FREQ, SAMPLING_FREQ);
+
+
+	//Create the semaphore (Must be done before the task scheduler starts!)
+	xBinarySemaphore = xSemaphoreCreateBinary();
 
 	// Must start the scheduler or nothing happens!
 	vTaskStartScheduler();
 
-	//Create the semaphore
-	//xBinarySemaphore = xSemaphoreCreateBinary();
-
-
-/*  This code never runs when we use RTOS
-	// Initialize the low pass filter here
-	lowpass_filter_init();
-
-	// Initialize the signal (noise) generators here
-	sine_gen_init_q15(&signal_desc, SIGNAL_FREQ, SAMPLING_FREQ);
-	sine_gen_init_q15(&noise_desc, NOISE_FREQ, SAMPLING_FREQ);
-*/
-
 
 	while(1)
 	{
-/*			This code never runs when we use RTOS
- *
- * 			// swv_plot_signal();
-			// serial_plot_signal();
 
-		sine_sig_sample = sine_calc_sample_q15(&signal_desc)/2;
-		noise_sig_sample = sine_calc_sample_q15(&noise_desc)/2;
-		corrupt_sig_sample = sine_sig_sample + noise_sig_sample;
-
-		// Filter the corrupt signal here to get the filtered signal
-		filtered_sig_sample = lowpass_filter_exec(&corrupt_sig_sample);
-
-
-//  Use tabs between data for Tauno plotter to work
-		printf("%d\t ", (int)sine_sig_sample);
-		printf("%d\t", (int)noise_sig_sample);
-		printf("%d\t", (int)corrupt_sig_sample);
-		printf("%d\n\r", (int)filtered_sig_sample);
-
-		pseudo_dly(9000);*/
 	}
 
 
 } // End of main
 
-// Definition of the first task
+// Definition of the first task - it gives the semaphore initially
+// This task samples the ADC on PA1
 void data_acq_task(void *pvParameters)
 {
+	xSemaphoreGive(xBinarySemaphore);
+
 	while(1)
 	{
-		//xSemaphoreTake(xBinarySemaphore, portMAX_DELAY);
+		xSemaphoreTake(xBinarySemaphore, portMAX_DELAY);
+
+		g_adc_value = adc_read();
+
 		Task1_profiler++;
+
+		xSemaphoreGive(xBinarySemaphore);
+		vTaskDelay(_10ms);
 	}
 }
 
+
 // Definition of the second task
+// Scale ADC data, convert to q type, filter
 void data_proc_task(void *pvParameters)
 {
 	while(1)
 	{
-		//xSemaphoreTake(xBinarySemaphore, portMAX_DELAY);
+		xSemaphoreTake(xBinarySemaphore, portMAX_DELAY);
+
+		// Scale ADC values to +/- 1
+		f32_adc_value = ((float32_t)(g_adc_value & 0xFFF)/(0xFFF/2)) - 1;
+
+		// Convert float to q
+		arm_float_to_q15(&f32_adc_value, &q15_adc_value, 1);
+		// Perform DSP
+
+
+
+
+		filtered_sig_sample = lowpass_filter_exec(&corrupt_sig_sample);
+
 		Task2_profiler++;
+
+		xSemaphoreGive(xBinarySemaphore);
+		vTaskDelay(_10ms);
 	}
 }
 
 // Definition of the third task
+// This task displays the various signals
 void data_disp_task(void *pvParameters)
 {
 	while(1)
 	{
-		//xSemaphoreTake(xBinarySemaphore, portMAX_DELAY);
+		xSemaphoreTake(xBinarySemaphore, portMAX_DELAY);
+
+		// printf("%d\t ", (int)sine_sig_sample);      // Original uncorrupted signal
+		// printf("%d\t", (int)noise_sig_sample);		// Noisy signal
+		// printf("%d\t", (int)corrupt_sig_sample);	// Noise-corrupted signal
+		// printf("%d\n\r", (int)filtered_sig_sample); // Post-filtered signal
+
+		printf("%d\n\r", (int)g_adc_value); // Post-filtered signal
+
 		Task3_profiler++;
+
+		xSemaphoreGive(xBinarySemaphore);
+		vTaskDelay(_10ms);
 	}
 }
 
-// Definition of the fourth task
-void data_filt_task(void *pvParameters)
-{
-	while(1)
-	{
-		//xSemaphoreTake(xBinarySemaphore, portMAX_DELAY);
-		Task4_profiler++;
-	}
-}
 
 
 /*

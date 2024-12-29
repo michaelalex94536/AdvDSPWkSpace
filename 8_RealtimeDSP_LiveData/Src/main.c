@@ -31,8 +31,6 @@ extern float _5hz_signal[HZ_5_SIG_LEN];
 extern float32_t input_signal_f32_1kHz_15kHz[KHZ1_15_SIG_LEN] ;
 float g_in_sig_sample;
 
-uint32_t g_adc_value;  // Measured ADC value
-
 // static void swv_plot_signal(void);
 // static void serial_plot_signal(void);
 static void pseudo_dly(int dly);
@@ -66,9 +64,15 @@ q15_t sine_sig_sample, noise_sig_sample;
 q15_t corrupt_sig_sample;
 
 // Post-filtered corrupt signal
-q15_t filtered_sig_sample;
+q15_t fltr_sig_sample;
 
 const TickType_t _10ms = pdMS_TO_TICKS(10);
+
+
+uint32_t g_adc_value;  			// Measured, raw ADC value - an unsigned integer
+float32_t f32_adc_value;		// ADC value converted to normalized float: range is -1.0 to 1.0
+q15_t q15_adc_value;
+
 
 int main(void)
 {
@@ -107,26 +111,7 @@ int main(void)
 
 	while(1)
 	{
-/*			This code never runs when we use RTOS
- *
- * 			// swv_plot_signal();
-			// serial_plot_signal();
 
-		sine_sig_sample = sine_calc_sample_q15(&signal_desc)/2;
-		noise_sig_sample = sine_calc_sample_q15(&noise_desc)/2;
-		corrupt_sig_sample = sine_sig_sample + noise_sig_sample;
-
-		// Filter the corrupt signal here to get the filtered signal
-		filtered_sig_sample = lowpass_filter_exec(&corrupt_sig_sample);
-
-
-//  Use tabs between data for Tauno plotter to work
-		printf("%d\t ", (int)sine_sig_sample);
-		printf("%d\t", (int)noise_sig_sample);
-		printf("%d\t", (int)corrupt_sig_sample);
-		printf("%d\n\r", (int)filtered_sig_sample);
-
-		pseudo_dly(9000);*/
 	}
 
 
@@ -144,9 +129,6 @@ void data_acq_task(void *pvParameters)
 
 		g_adc_value = adc_read();
 
-		sine_sig_sample = sine_calc_sample_q15(&signal_desc)/2;
-		noise_sig_sample = sine_calc_sample_q15(&noise_desc)/8;
-
 		Task1_profiler++;
 
 		xSemaphoreGive(xBinarySemaphore);
@@ -156,16 +138,21 @@ void data_acq_task(void *pvParameters)
 
 
 // Definition of the second task
-// Add the sine wave and noise signals to create the corrupt signal, then filter it
+// Scale ADC data, convert to q type, filter
 void data_proc_task(void *pvParameters)
 {
 	while(1)
 	{
 		xSemaphoreTake(xBinarySemaphore, portMAX_DELAY);
 
-		corrupt_sig_sample = sine_sig_sample + noise_sig_sample;
+		// Scale ADC values to +/- 1
+		f32_adc_value = ((float32_t)(g_adc_value & 0xFFF)/(0xFFF/2)) - 1;
 
-		filtered_sig_sample = lowpass_filter_exec(&corrupt_sig_sample);
+		// Convert float to q
+		arm_float_to_q15(&f32_adc_value, &q15_adc_value, 1);
+
+		// Perform DSP
+		fltr_sig_sample = lowpass_filter_exec(&q15_adc_value);
 
 		Task2_profiler++;
 
@@ -182,12 +169,8 @@ void data_disp_task(void *pvParameters)
 	{
 		xSemaphoreTake(xBinarySemaphore, portMAX_DELAY);
 
-		// printf("%d\t ", (int)sine_sig_sample);      // Original uncorrupted signal
-		// printf("%d\t", (int)noise_sig_sample);		// Noisy signal
-		// printf("%d\t", (int)corrupt_sig_sample);	// Noise-corrupted signal
-		// printf("%d\n\r", (int)filtered_sig_sample); // Post-filtered signal
-
-		printf("%d\n\r", (int)g_adc_value); // Post-filtered signal
+		printf("%d\t", (int)q15_adc_value);			// Raw data sample
+		printf("%d\n\r", (int)fltr_sig_sample); 	// Post-filtered signal
 
 		Task3_profiler++;
 

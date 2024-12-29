@@ -66,7 +66,7 @@ arm_fir_instance_q15 lowpass_filter_set;
 
 void lowpass_filter_init(void)
 {
-	/*Convert impulse response from float to q*/
+	/*Convert impulse response to q*/
 	arm_float_to_q15(LP_1HZ_2HZ_IMPULSE_RESPONSE, q15_LP_1HZ_2HZ_IMPULSE_RESPONSE, IMP_RSP_LENGTH);
 
 
