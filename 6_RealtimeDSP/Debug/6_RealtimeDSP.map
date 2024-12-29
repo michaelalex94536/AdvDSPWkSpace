@@ -1108,7 +1108,8 @@ Discarded input sections
  .bss           0x00000000        0x0 ./Src/main.o
  .bss.g_in_sig_sample
                 0x00000000        0x4 ./Src/main.o
- .rodata._10ms  0x00000000        0x4 ./Src/main.o
+ .rodata._ms_ticks
+                0x00000000        0x4 ./Src/main.o
  .text.pseudo_dly
                 0x00000000       0x2a ./Src/main.o
  .debug_macro   0x00000000      0xacc ./Src/main.o
@@ -3376,7 +3377,7 @@ LOAD /opt/st/stm32cubeide_1.17.0/plugins/com.st.stm32cube.ide.mcu.externaltools.
  .debug_line    0x00008041      0x17c /home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/Lib/GCC/libarm_cortexM4lf_math.a(arm_sin_f32.o)
  .debug_line    0x000081bd      0x135 /home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/Lib/GCC/libarm_cortexM4lf_math.a(arm_common_tables.o)
 
-.debug_str      0x00000000    0x5eef0
+.debug_str      0x00000000    0x5eef4
  .debug_str     0x00000000     0xa994 ./Middlewares/Third_Party/FreeRTOS/Source/list.o
                                0xabb9 (size before relaxing)
  .debug_str     0x0000a994     0x18a1 ./Middlewares/Third_Party/FreeRTOS/Source/queue.o
@@ -3389,33 +3390,33 @@ LOAD /opt/st/stm32cubeide_1.17.0/plugins/com.st.stm32cube.ide.mcu.externaltools.
                                0xb4fb (size before relaxing)
  .debug_str     0x0000e736     0x18a9 ./Src/lowpassfilter.o
                                0x8b0b (size before relaxing)
- .debug_str     0x0000ffdf    0x4c44c ./Src/main.o
-                              0x59471 (size before relaxing)
- .debug_str     0x0005c42b       0xaf ./Src/sine_generator.o
+ .debug_str     0x0000ffdf    0x4c450 ./Src/main.o
+                              0x59475 (size before relaxing)
+ .debug_str     0x0005c42f       0xaf ./Src/sine_generator.o
                                0x8aec (size before relaxing)
- .debug_str     0x0005c4da     0x1e45 ./Src/syscalls.o
+ .debug_str     0x0005c4de     0x1e45 ./Src/syscalls.o
                                0x98f0 (size before relaxing)
- .debug_str     0x0005e31f       0x66 ./Src/sysmem.o
+ .debug_str     0x0005e323       0x66 ./Src/sysmem.o
                                0x6108 (size before relaxing)
- .debug_str     0x0005e385      0x1af ./Src/system_stm32f4xx.o
+ .debug_str     0x0005e389      0x1af ./Src/system_stm32f4xx.o
                               0x4fd28 (size before relaxing)
- .debug_str     0x0005e534      0x11f ./Src/uart.o
+ .debug_str     0x0005e538      0x11f ./Src/uart.o
                               0x4fd65 (size before relaxing)
- .debug_str     0x0005e653       0x3f ./Startup/startup_stm32f411retx.o
+ .debug_str     0x0005e657       0x3f ./Startup/startup_stm32f411retx.o
                                  0x8b (size before relaxing)
- .debug_str     0x0005e692      0x18c /home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/Lib/GCC/libarm_cortexM4lf_math.a(arm_float_to_q15.o)
+ .debug_str     0x0005e696      0x18c /home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/Lib/GCC/libarm_cortexM4lf_math.a(arm_float_to_q15.o)
                                 0x27d (size before relaxing)
- .debug_str     0x0005e81e       0x8b /home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/Lib/GCC/libarm_cortexM4lf_math.a(arm_fir_q15.o)
+ .debug_str     0x0005e822       0x8b /home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/Lib/GCC/libarm_cortexM4lf_math.a(arm_fir_q15.o)
                                 0x319 (size before relaxing)
- .debug_str     0x0005e8a9       0x33 /home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/Lib/GCC/libarm_cortexM4lf_math.a(arm_fir_init_q15.o)
+ .debug_str     0x0005e8ad       0x33 /home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/Lib/GCC/libarm_cortexM4lf_math.a(arm_fir_init_q15.o)
                                 0x326 (size before relaxing)
- .debug_str     0x0005e8dc       0x8d /home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/Lib/GCC/libarm_cortexM4lf_math.a(arm_biquad_cascade_df1_q15.o)
+ .debug_str     0x0005e8e0       0x8d /home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/Lib/GCC/libarm_cortexM4lf_math.a(arm_biquad_cascade_df1_q15.o)
                                 0x366 (size before relaxing)
- .debug_str     0x0005e969       0x42 /home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/Lib/GCC/libarm_cortexM4lf_math.a(arm_biquad_cascade_df1_init_q15.o)
+ .debug_str     0x0005e96d       0x42 /home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/Lib/GCC/libarm_cortexM4lf_math.a(arm_biquad_cascade_df1_init_q15.o)
                                 0x2bc (size before relaxing)
- .debug_str     0x0005e9ab       0x4e /home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/Lib/GCC/libarm_cortexM4lf_math.a(arm_sin_f32.o)
+ .debug_str     0x0005e9af       0x4e /home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/Lib/GCC/libarm_cortexM4lf_math.a(arm_sin_f32.o)
                                 0x255 (size before relaxing)
- .debug_str     0x0005e9f9      0x4f7 /home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/Lib/GCC/libarm_cortexM4lf_math.a(arm_common_tables.o)
+ .debug_str     0x0005e9fd      0x4f7 /home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/Lib/GCC/libarm_cortexM4lf_math.a(arm_common_tables.o)
                                 0x717 (size before relaxing)
 
 .comment        0x00000000       0xb1

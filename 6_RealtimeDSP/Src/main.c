@@ -63,7 +63,9 @@ q15_t corrupt_sig_sample;
 q15_t filtered_sig_sample;
 
 // Convert time in millisec to clock ticks
-const TickType_t _10ms = pdMS_TO_TICKS(10);
+// Each task needs a delay to work correctly. 1 msec is way too short; 10 msec is fine.
+const TickType_t _ms_ticks = pdMS_TO_TICKS(5);
+
 
 int main(void)
 {
@@ -137,13 +139,13 @@ void data_acq_task(void *pvParameters)
 		Task1_profiler++;
 
 		xSemaphoreGive(xBinarySemaphore);
-		vTaskDelay(_10ms);
+		vTaskDelay(_ms_ticks);
 	}
 }
 
 
 // Definition of the second task
-// Add the sine wave and noise signals to create the corrupt signal, then filter it
+// Add the sine wave and noise signals to create the corrupt signal, then low pass filter it
 void data_proc_task(void *pvParameters)
 {
 	while(1)
@@ -157,7 +159,7 @@ void data_proc_task(void *pvParameters)
 		Task2_profiler++;
 
 		xSemaphoreGive(xBinarySemaphore);
-		vTaskDelay(_10ms);
+		vTaskDelay(_ms_ticks);
 	}
 }
 
@@ -177,7 +179,7 @@ void data_disp_task(void *pvParameters)
 		Task3_profiler++;
 
 		xSemaphoreGive(xBinarySemaphore);
-		vTaskDelay(_10ms);
+		vTaskDelay(_ms_ticks);
 	}
 }
 

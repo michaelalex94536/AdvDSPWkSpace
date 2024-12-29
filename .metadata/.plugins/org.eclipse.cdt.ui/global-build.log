@@ -1,69 +1,129 @@
-20:14:39 **** Build of configuration Debug for project 6_RealtimeDSP ****
+22:21:17 **** Incremental Build of configuration Debug for project 8_RealtimeDSP_LiveData ****
 make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -D__FPU_PRESENT -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DARM_MATH_CM4 -c -I../Inc -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/DSP/Include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/Include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-../Src/main.c:204:13: warning: 'pseudo_dly' defined but not used [-Wunused-function]
-  204 | static void pseudo_dly(int dly)
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -D__FPU_PRESENT -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DARM_MATH_CM4 -c -I../Inc -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/DSP/Include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/Include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:225:13: warning: 'pseudo_dly' defined but not used [-Wunused-function]
+  225 | static void pseudo_dly(int dly)
       |             ^~~~~~~~~~
-arm-none-eabi-gcc -o "6_RealtimeDSP.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="6_RealtimeDSP.map" -Wl,--gc-sections -static -L"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/Lib/GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 6_RealtimeDSP.elf
+arm-none-eabi-gcc -o "8_RealtimeDSP_LiveData.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="8_RealtimeDSP_LiveData.map" -Wl,--gc-sections -static -L"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/Lib/GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 8_RealtimeDSP_LiveData.elf
  
-arm-none-eabi-size  6_RealtimeDSP.elf 
-arm-none-eabi-objdump -h -S 6_RealtimeDSP.elf  > "6_RealtimeDSP.list"
+arm-none-eabi-size  8_RealtimeDSP_LiveData.elf 
+arm-none-eabi-objdump -h -S 8_RealtimeDSP_LiveData.elf  > "8_RealtimeDSP_LiveData.list"
    text	   data	    bss	    dec	    hex	filename
-  36684	    540	  17780	  55004	   d6dc	6_RealtimeDSP.elf
+  35428	    600	  17832	  53860	   d264	8_RealtimeDSP_LiveData.elf
 Finished building: default.size.stdout
  
-Finished building: 6_RealtimeDSP.list
+Finished building: 8_RealtimeDSP_LiveData.list
  
-20:27:31 **** Incremental Build of configuration Debug for project 6_RealtimeDSP ****
+22:21:20 **** Incremental Build of configuration Debug for project 8_RealtimeDSP_LiveData ****
 make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -D__FPU_PRESENT -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DARM_MATH_CM4 -c -I../Inc -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/DSP/Include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/Include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-../Src/main.c:205:13: warning: 'pseudo_dly' defined but not used [-Wunused-function]
-  205 | static void pseudo_dly(int dly)
-      |             ^~~~~~~~~~
-arm-none-eabi-gcc -o "6_RealtimeDSP.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="6_RealtimeDSP.map" -Wl,--gc-sections -static -L"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/Lib/GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 6_RealtimeDSP.elf
- 
-arm-none-eabi-size  6_RealtimeDSP.elf 
-arm-none-eabi-objdump -h -S 6_RealtimeDSP.elf  > "6_RealtimeDSP.list"
+arm-none-eabi-size  8_RealtimeDSP_LiveData.elf 
    text	   data	    bss	    dec	    hex	filename
-  36684	    540	  17780	  55004	   d6dc	6_RealtimeDSP.elf
+  35428	    600	  17832	  53860	   d264	8_RealtimeDSP_LiveData.elf
 Finished building: default.size.stdout
  
-Finished building: 6_RealtimeDSP.list
- 
-20:30:22 **** Incremental Build of configuration Debug for project 6_RealtimeDSP ****
+22:26:29 **** Incremental Build of configuration Debug for project 8_RealtimeDSP_LiveData ****
 make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -D__FPU_PRESENT -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DARM_MATH_CM4 -c -I../Inc -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/DSP/Include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/Include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-../Src/main.c:208:13: warning: 'pseudo_dly' defined but not used [-Wunused-function]
-  208 | static void pseudo_dly(int dly)
+arm-none-eabi-gcc "../Src/lowpassfilter.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -D__FPU_PRESENT -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DARM_MATH_CM4 -c -I../Inc -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/DSP/Include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/Include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/lowpassfilter.d" -MT"Src/lowpassfilter.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/lowpassfilter.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -D__FPU_PRESENT -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DARM_MATH_CM4 -c -I../Inc -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/DSP/Include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/Include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:225:13: warning: 'pseudo_dly' defined but not used [-Wunused-function]
+  225 | static void pseudo_dly(int dly)
       |             ^~~~~~~~~~
-arm-none-eabi-gcc -o "6_RealtimeDSP.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="6_RealtimeDSP.map" -Wl,--gc-sections -static -L"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/Lib/GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 6_RealtimeDSP.elf
+arm-none-eabi-gcc -o "8_RealtimeDSP_LiveData.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="8_RealtimeDSP_LiveData.map" -Wl,--gc-sections -static -L"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/Lib/GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 8_RealtimeDSP_LiveData.elf
  
-arm-none-eabi-size  6_RealtimeDSP.elf 
-arm-none-eabi-objdump -h -S 6_RealtimeDSP.elf  > "6_RealtimeDSP.list"
+arm-none-eabi-size  8_RealtimeDSP_LiveData.elf 
+arm-none-eabi-objdump -h -S 8_RealtimeDSP_LiveData.elf  > "8_RealtimeDSP_LiveData.list"
    text	   data	    bss	    dec	    hex	filename
-  36660	    540	  17780	  54980	   d6c4	6_RealtimeDSP.elf
+  35852	    600	  17840	  54292	   d414	8_RealtimeDSP_LiveData.elf
 Finished building: default.size.stdout
  
-Finished building: 6_RealtimeDSP.list
+Finished building: 8_RealtimeDSP_LiveData.list
  
-20:35:37 **** Incremental Build of configuration Debug for project 6_RealtimeDSP ****
+22:27:17 **** Incremental Build of configuration Debug for project 8_RealtimeDSP_LiveData ****
 make -j8 all 
-arm-none-eabi-gcc "../Src/lowpassfilter.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -D__FPU_PRESENT -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DARM_MATH_CM4 -c -I../Inc -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/DSP/Include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/Include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/lowpassfilter.d" -MT"Src/lowpassfilter.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/lowpassfilter.o"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -D__FPU_PRESENT -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DARM_MATH_CM4 -c -I../Inc -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/DSP/Include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/Include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-../Src/main.c:210:13: warning: 'pseudo_dly' defined but not used [-Wunused-function]
-  210 | static void pseudo_dly(int dly)
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -D__FPU_PRESENT -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DARM_MATH_CM4 -c -I../Inc -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/DSP/Include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/Include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:225:13: warning: 'pseudo_dly' defined but not used [-Wunused-function]
+  225 | static void pseudo_dly(int dly)
       |             ^~~~~~~~~~
-arm-none-eabi-gcc -o "6_RealtimeDSP.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="6_RealtimeDSP.map" -Wl,--gc-sections -static -L"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/Lib/GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 6_RealtimeDSP.elf
+arm-none-eabi-gcc -o "8_RealtimeDSP_LiveData.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="8_RealtimeDSP_LiveData.map" -Wl,--gc-sections -static -L"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/Lib/GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 8_RealtimeDSP_LiveData.elf
  
-arm-none-eabi-size  6_RealtimeDSP.elf 
-arm-none-eabi-objdump -h -S 6_RealtimeDSP.elf  > "6_RealtimeDSP.list"
+arm-none-eabi-size  8_RealtimeDSP_LiveData.elf 
+arm-none-eabi-objdump -h -S 8_RealtimeDSP_LiveData.elf  > "8_RealtimeDSP_LiveData.list"
    text	   data	    bss	    dec	    hex	filename
-  36660	    540	  17780	  54980	   d6c4	6_RealtimeDSP.elf
+  36820	    600	  17840	  55260	   d7dc	8_RealtimeDSP_LiveData.elf
 Finished building: default.size.stdout
  
-Finished building: 6_RealtimeDSP.list
+Finished building: 8_RealtimeDSP_LiveData.list
+ 
+22:28:46 **** Incremental Build of configuration Debug for project 8_RealtimeDSP_LiveData ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/lowpassfilter.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -D__FPU_PRESENT -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DARM_MATH_CM4 -c -I../Inc -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/DSP/Include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/Include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/lowpassfilter.d" -MT"Src/lowpassfilter.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/lowpassfilter.o"
+arm-none-eabi-gcc -o "8_RealtimeDSP_LiveData.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="8_RealtimeDSP_LiveData.map" -Wl,--gc-sections -static -L"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/Lib/GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 8_RealtimeDSP_LiveData.elf
+ 
+arm-none-eabi-size  8_RealtimeDSP_LiveData.elf 
+arm-none-eabi-objdump -h -S 8_RealtimeDSP_LiveData.elf  > "8_RealtimeDSP_LiveData.list"
+   text	   data	    bss	    dec	    hex	filename
+  36820	    600	  17840	  55260	   d7dc	8_RealtimeDSP_LiveData.elf
+Finished building: default.size.stdout
+ 
+Finished building: 8_RealtimeDSP_LiveData.list
+ 
+22:37:35 **** Incremental Build of configuration Debug for project 8_RealtimeDSP_LiveData ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/lowpassfilter.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -D__FPU_PRESENT -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DARM_MATH_CM4 -c -I../Inc -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/DSP/Include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/Include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/lowpassfilter.d" -MT"Src/lowpassfilter.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/lowpassfilter.o"
+arm-none-eabi-gcc -o "8_RealtimeDSP_LiveData.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="8_RealtimeDSP_LiveData.map" -Wl,--gc-sections -static -L"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/Lib/GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 8_RealtimeDSP_LiveData.elf
+ 
+arm-none-eabi-size  8_RealtimeDSP_LiveData.elf 
+arm-none-eabi-objdump -h -S 8_RealtimeDSP_LiveData.elf  > "8_RealtimeDSP_LiveData.list"
+   text	   data	    bss	    dec	    hex	filename
+  36820	    600	  17840	  55260	   d7dc	8_RealtimeDSP_LiveData.elf
+Finished building: default.size.stdout
+ 
+Finished building: 8_RealtimeDSP_LiveData.list
+ 
+22:40:06 **** Incremental Build of configuration Debug for project 8_RealtimeDSP_LiveData ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/lowpassfilter.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -D__FPU_PRESENT -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DARM_MATH_CM4 -c -I../Inc -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/DSP/Include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/Include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/lowpassfilter.d" -MT"Src/lowpassfilter.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/lowpassfilter.o"
+arm-none-eabi-gcc -o "8_RealtimeDSP_LiveData.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="8_RealtimeDSP_LiveData.map" -Wl,--gc-sections -static -L"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/Lib/GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 8_RealtimeDSP_LiveData.elf
+ 
+arm-none-eabi-size  8_RealtimeDSP_LiveData.elf 
+arm-none-eabi-objdump -h -S 8_RealtimeDSP_LiveData.elf  > "8_RealtimeDSP_LiveData.list"
+   text	   data	    bss	    dec	    hex	filename
+  36820	    600	  17840	  55260	   d7dc	8_RealtimeDSP_LiveData.elf
+Finished building: default.size.stdout
+ 
+Finished building: 8_RealtimeDSP_LiveData.list
+ 
+22:41:42 **** Incremental Build of configuration Debug for project 8_RealtimeDSP_LiveData ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/lowpassfilter.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -D__FPU_PRESENT -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DARM_MATH_CM4 -c -I../Inc -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/DSP/Include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/Include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/lowpassfilter.d" -MT"Src/lowpassfilter.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/lowpassfilter.o"
+arm-none-eabi-gcc -o "8_RealtimeDSP_LiveData.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="8_RealtimeDSP_LiveData.map" -Wl,--gc-sections -static -L"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/Lib/GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 8_RealtimeDSP_LiveData.elf
+ 
+arm-none-eabi-size  8_RealtimeDSP_LiveData.elf 
+arm-none-eabi-objdump -h -S 8_RealtimeDSP_LiveData.elf  > "8_RealtimeDSP_LiveData.list"
+   text	   data	    bss	    dec	    hex	filename
+  36820	    600	  17840	  55260	   d7dc	8_RealtimeDSP_LiveData.elf
+Finished building: default.size.stdout
+ 
+Finished building: 8_RealtimeDSP_LiveData.list
+ 
+22:51:18 **** Incremental Build of configuration Debug for project 8_RealtimeDSP_LiveData ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/lowpassfilter.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -D__FPU_PRESENT -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DARM_MATH_CM4 -c -I../Inc -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/DSP/Include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/Include" -I"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/lowpassfilter.d" -MT"Src/lowpassfilter.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/lowpassfilter.o"
+arm-none-eabi-gcc -o "8_RealtimeDSP_LiveData.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="8_RealtimeDSP_LiveData.map" -Wl,--gc-sections -static -L"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/Lib/GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 8_RealtimeDSP_LiveData.elf
+ 
+arm-none-eabi-size  8_RealtimeDSP_LiveData.elf 
+arm-none-eabi-objdump -h -S 8_RealtimeDSP_LiveData.elf  > "8_RealtimeDSP_LiveData.list"
+   text	   data	    bss	    dec	    hex	filename
+  36820	    600	  17848	  55268	   d7e4	8_RealtimeDSP_LiveData.elf
+Finished building: default.size.stdout
+ 
+Finished building: 8_RealtimeDSP_LiveData.list
  

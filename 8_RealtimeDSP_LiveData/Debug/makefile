@@ -36,34 +36,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := 6_RealtimeDSP
+BUILD_ARTIFACT_NAME := 8_RealtimeDSP_LiveData
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-6_RealtimeDSP.elf \
+8_RealtimeDSP_LiveData.elf \
 
 MAP_FILES += \
-6_RealtimeDSP.map \
+8_RealtimeDSP_LiveData.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-6_RealtimeDSP.list \
+8_RealtimeDSP_LiveData.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: 6_RealtimeDSP.elf secondary-outputs
+main-build: 8_RealtimeDSP_LiveData.elf secondary-outputs
 
 # Tool invocations
-6_RealtimeDSP.elf 6_RealtimeDSP.map: $(OBJS) $(USER_OBJS) /home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "6_RealtimeDSP.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="6_RealtimeDSP.map" -Wl,--gc-sections -static -L"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/6_RealtimeDSP/chip_headers/CMSIS/Lib/GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+8_RealtimeDSP_LiveData.elf 8_RealtimeDSP_LiveData.map: $(OBJS) $(USER_OBJS) /home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "8_RealtimeDSP_LiveData.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="8_RealtimeDSP_LiveData.map" -Wl,--gc-sections -static -L"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/8_RealtimeDSP_LiveData/chip_headers/CMSIS/Lib/GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -72,14 +72,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-6_RealtimeDSP.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "6_RealtimeDSP.list"
+8_RealtimeDSP_LiveData.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "8_RealtimeDSP_LiveData.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) 6_RealtimeDSP.elf 6_RealtimeDSP.list 6_RealtimeDSP.map default.size.stdout
+	-$(RM) 8_RealtimeDSP_LiveData.elf 8_RealtimeDSP_LiveData.list 8_RealtimeDSP_LiveData.map default.size.stdout
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)

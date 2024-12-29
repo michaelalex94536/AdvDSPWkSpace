@@ -6,9 +6,15 @@
  */
 
 #include "lowpassfilter.h"
+#include "signals.h"
+#include "arm_math.h"
 
 #define FILTER_TAPS				32
 #define FILTER_BLOCK_LEN		1
+
+extern  float LP_1HZ_2HZ_IMPULSE_RESPONSE[IMP_RSP_LENGTH];
+
+q15_t q15_LP_1HZ_2HZ_IMPULSE_RESPONSE[IMP_RSP_LENGTH];
 
 
 q15_t low_pass_filter_coeff[FILTER_TAPS] =
@@ -60,17 +66,22 @@ arm_fir_instance_q15 lowpass_filter_set;
 
 void lowpass_filter_init(void)
 {
+	/*Convert impulse response to q*/
+	arm_float_to_q15(LP_1HZ_2HZ_IMPULSE_RESPONSE, q15_LP_1HZ_2HZ_IMPULSE_RESPONSE, IMP_RSP_LENGTH);
+
+
 	arm_fir_init_q15(&lowpass_filter_set,
 						FILTER_TAPS,
-						low_pass_filter_coeff,
+						q15_LP_1HZ_2HZ_IMPULSE_RESPONSE,
 						lowpass_filter_state,
 						FILTER_BLOCK_LEN);
+
 }
 
 q15_t lowpass_filter_exec(q15_t * input)
 {
 	q15_t out;
-	arm_fir_q15(&lowpass_filter_set, input,&out, FILTER_BLOCK_LEN);
+	arm_fir_q15(&lowpass_filter_set, input, &out, FILTER_BLOCK_LEN);
 
 	return out;
 }

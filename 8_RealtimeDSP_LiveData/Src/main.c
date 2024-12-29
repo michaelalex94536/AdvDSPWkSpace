@@ -1,6 +1,14 @@
 /*
  *
- * 				Semaphores.c
+ * 				RealtimeDSP_LiveData
+ *
+ * 				Sample ADC
+ *
+ * 				Files "adc.c" and "adc.h" simply added to this project.
+ *
+ * 				The low pass filter taps (impulse response) are in the file "signals.c"
+ *
+ * 	Note: No DSP is being done here!  Filters don't work for some reason - so I disabled them.
  *
  */
 
@@ -13,6 +21,7 @@
 #include "sine_generator.h"
 #include "lowpassfilter.h"
 #include "semphr.h"
+#include "adc.h"
 
 #define SIGNAL_FREQ		10
 #define NOISE_FREQ		50
@@ -21,6 +30,8 @@
 extern float _5hz_signal[HZ_5_SIG_LEN];
 extern float32_t input_signal_f32_1kHz_15kHz[KHZ1_15_SIG_LEN] ;
 float g_in_sig_sample;
+
+uint32_t g_adc_value;  // Measured ADC value
 
 // static void swv_plot_signal(void);
 // static void serial_plot_signal(void);
@@ -66,6 +77,12 @@ int main(void)
 
 	// Initialize the UART
 	uart2_tx_init();
+
+	// Initialize the ADC
+	pa1_adc_init();
+
+	// Start ADC conversion
+	start_conversion();
 
 	// Create several tasks
 	xTaskCreate(data_acq_task, "Create signals", 100, NULL, Task1_priority, NULL);
@@ -116,7 +133,7 @@ int main(void)
 } // End of main
 
 // Definition of the first task - it gives the semaphore initially
-// This task generates the sine wave signal as well as the noise
+// This task samples the ADC on PA1
 void data_acq_task(void *pvParameters)
 {
 	xSemaphoreGive(xBinarySemaphore);
@@ -124,6 +141,8 @@ void data_acq_task(void *pvParameters)
 	while(1)
 	{
 		xSemaphoreTake(xBinarySemaphore, portMAX_DELAY);
+
+		g_adc_value = adc_read();
 
 		sine_sig_sample = sine_calc_sample_q15(&signal_desc)/2;
 		noise_sig_sample = sine_calc_sample_q15(&noise_desc)/8;
@@ -163,10 +182,12 @@ void data_disp_task(void *pvParameters)
 	{
 		xSemaphoreTake(xBinarySemaphore, portMAX_DELAY);
 
-		printf("%d\t ", (int)sine_sig_sample);      // Original uncorrupted signal
-		printf("%d\t", (int)noise_sig_sample);		// Noisy signal
-		printf("%d\t", (int)corrupt_sig_sample);	// Noise-corrupted signal
-		printf("%d\n\r", (int)filtered_sig_sample); // Post-filtered signal
+		// printf("%d\t ", (int)sine_sig_sample);      // Original uncorrupted signal
+		// printf("%d\t", (int)noise_sig_sample);		// Noisy signal
+		// printf("%d\t", (int)corrupt_sig_sample);	// Noise-corrupted signal
+		// printf("%d\n\r", (int)filtered_sig_sample); // Post-filtered signal
+
+		printf("%d\n\r", (int)g_adc_value); // Post-filtered signal
 
 		Task3_profiler++;
 
