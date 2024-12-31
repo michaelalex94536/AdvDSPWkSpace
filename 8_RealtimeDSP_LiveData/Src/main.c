@@ -2,13 +2,12 @@
  *
  * 				RealtimeDSP_LiveData
  *
- * 				Sample ADC
+ * 				Sample ADC and filter blocks of data this time
  *
  * 				Files "adc.c" and "adc.h" simply added to this project.
  *
  * 				The low pass filter taps (impulse response) are in the file "signals.c"
  *
- * 	Note: No DSP is being done here!  Filters don't work for some reason - so I disabled them.
  *
  */
 
@@ -66,12 +65,13 @@ q15_t corrupt_sig_sample;
 // Post-filtered corrupt signal
 q15_t fltr_sig_sample;
 
-const TickType_t _10ms = pdMS_TO_TICKS(10);
+// Create a delay of 10 msec in clock ticks
+const TickType_t millisec_to_ticks = pdMS_TO_TICKS(10);
 
 
 uint32_t g_adc_value;  			// Measured, raw ADC value - an unsigned integer
 float32_t f32_adc_value;		// ADC value converted to normalized float: range is -1.0 to 1.0
-q15_t q15_adc_value;
+q15_t q15_adc_value;			// ADC value as Q type
 
 
 int main(void)
@@ -132,7 +132,7 @@ void data_acq_task(void *pvParameters)
 		Task1_profiler++;
 
 		xSemaphoreGive(xBinarySemaphore);
-		vTaskDelay(_10ms);
+		vTaskDelay(millisec_to_ticks);
 	}
 }
 
@@ -157,7 +157,7 @@ void data_proc_task(void *pvParameters)
 		Task2_profiler++;
 
 		xSemaphoreGive(xBinarySemaphore);
-		vTaskDelay(_10ms);
+		vTaskDelay(millisec_to_ticks);
 	}
 }
 
@@ -175,7 +175,7 @@ void data_disp_task(void *pvParameters)
 		Task3_profiler++;
 
 		xSemaphoreGive(xBinarySemaphore);
-		vTaskDelay(_10ms);
+		vTaskDelay(millisec_to_ticks);
 	}
 }
 

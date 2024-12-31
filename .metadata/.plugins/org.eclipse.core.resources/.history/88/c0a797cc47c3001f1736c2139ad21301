@@ -1,8 +1,0 @@
-/*
- * lowpassfilter.c
- *
- *  Created on: Dec 25, 2024
- *      Author: michael
- */
-
-#include "lowpassfilter.h"

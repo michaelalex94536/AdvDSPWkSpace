@@ -1,4 +1,5 @@
-Task1_profiler
-Task2_profiler
 Task3_profiler
-g_adc_value
+Task1_profiler
+Task3_profiler
+g_sensor_value
+fltr_sensor_value

@@ -1,0 +1,13 @@
+/*
+ * fir_filter.c
+ *
+ *  Created on: Dec 30, 2024
+ *      Author: michaelalex
+ */
+
+#include "fir_filter.h"
+
+void fir_filter_init(fir_filter_type * fir, float32_t * fltr_kernel, uint32_t fltr_kernel_len)
+{
+
+}

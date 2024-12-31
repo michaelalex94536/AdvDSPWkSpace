@@ -1,0 +1,9 @@
+../Src/main.c:110:5:main	1
+../Src/main.c:160:6:acquisition_func	2
+../Src/main.c:177:6:data_proc_task	6
+../Src/main.c:221:6:data_disp_task	3
+../Src/main.c:243:6:TIM2_IRQHandler	1
+../Src/main.c:253:16:read_fifo	2
+../Src/main.c:272:13:clear_data_buffer	1
+../Src/main.c:310:13:pseudo_dly	2
+../Src/main.c:317:13:fpu_enable	1

@@ -3,9 +3,13 @@
  * 				RealtimeDSP.c
  *
  * 	Here, tasks give and take semaphores.
+ *
+ *
  * 	Three tasks emulate a typical RTOS DSP scenario. An ARM low pass filter is
  * 	used (defined in "lowpassfilter.c") to remove high frequency noise from a
  * 	noise-corrupted signal.
+ *
+ * 	Signals and noise are synthetic here.
  *
  */
 

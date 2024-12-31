@@ -1,0 +1,2 @@
+../Src/sine_generator.c:6:6:sine_gen_init_q15	56	static
+../Src/sine_generator.c:37:7:sine_calc_sample_q15	24	static

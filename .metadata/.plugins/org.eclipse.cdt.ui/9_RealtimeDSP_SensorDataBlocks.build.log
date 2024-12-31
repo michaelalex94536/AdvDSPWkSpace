@@ -1,0 +1,20 @@
+17:08:38 **** Incremental Build of configuration Debug for project 9_RealtimeDSP_SensorDataBlocks ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -D__FPU_PRESENT -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DARM_MATH_CM4 -c -I../Inc -I"/Users/michaelalex/Documents/Git/AdvDSPWkSpace/9_RealtimeDSP_SensorDataBlocks/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/michaelalex/Documents/Git/AdvDSPWkSpace/9_RealtimeDSP_SensorDataBlocks/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/michaelalex/Documents/Git/AdvDSPWkSpace/9_RealtimeDSP_SensorDataBlocks/chip_headers/CMSIS/DSP/Include" -I"/Users/michaelalex/Documents/Git/AdvDSPWkSpace/9_RealtimeDSP_SensorDataBlocks/chip_headers/CMSIS/Include" -I"/Users/michaelalex/Documents/Git/AdvDSPWkSpace/9_RealtimeDSP_SensorDataBlocks/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:279:13: warning: 'pseudo_dly' defined but not used [-Wunused-function]
+  279 | static void pseudo_dly(int dly)
+      |             ^~~~~~~~~~
+arm-none-eabi-gcc -o "9_RealtimeDSP_SensorDataBlocks.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"/Users/michaelalex/Documents/Git/AdvDSPWkSpace/9_RealtimeDSP_SensorDataBlocks/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="9_RealtimeDSP_SensorDataBlocks.map" -Wl,--gc-sections -static -L"/Users/michaelalex/Documents/Git/AdvDSPWkSpace/9_RealtimeDSP_SensorDataBlocks/chip_headers/CMSIS/Lib/GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 9_RealtimeDSP_SensorDataBlocks.elf
+ 
+arm-none-eabi-size  9_RealtimeDSP_SensorDataBlocks.elf 
+arm-none-eabi-objdump -h -S 9_RealtimeDSP_SensorDataBlocks.elf  > "9_RealtimeDSP_SensorDataBlocks.list"
+   text	   data	    bss	    dec	    hex	filename
+  34120	    596	  22556	  57272	   dfb8	9_RealtimeDSP_SensorDataBlocks.elf
+Finished building: default.size.stdout
+ 
+Finished building: 9_RealtimeDSP_SensorDataBlocks.list
+ 
+
+17:08:39 Build Finished. 0 errors, 1 warnings. (took 636ms)
+
