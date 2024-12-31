@@ -62,8 +62,8 @@ all: main-build
 main-build: 3_WaveformGeneration.elf secondary-outputs
 
 # Tool invocations
-3_WaveformGeneration.elf 3_WaveformGeneration.map: $(OBJS) $(USER_OBJS) /home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/3_WaveformGeneration/STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "3_WaveformGeneration.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/3_WaveformGeneration/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="3_WaveformGeneration.map" -Wl,--gc-sections -static -L"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/3_WaveformGeneration/chip_headers/CMSIS/Lib/GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+3_WaveformGeneration.elf 3_WaveformGeneration.map: $(OBJS) $(USER_OBJS) /Users/michaelalex/Documents/Git/AdvDSPWkSpace/3_WaveformGeneration/STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "3_WaveformGeneration.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/Users/michaelalex/Documents/Git/AdvDSPWkSpace/3_WaveformGeneration/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="3_WaveformGeneration.map" -Wl,--gc-sections -static -L"/Users/michaelalex/Documents/Git/AdvDSPWkSpace/3_WaveformGeneration/chip_headers/CMSIS/Lib/GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

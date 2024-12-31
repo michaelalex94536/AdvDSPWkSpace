@@ -1,28 +1,28 @@
 Middlewares/Third_Party/FreeRTOS/Source/event_groups.o: \
  ../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c \
- /home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
+ /Users/michaelalex/Documents/Git/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
  ../Inc/FreeRTOSConfig.h \
- /home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
- /home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
- /home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
- /home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h \
- /home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
- /home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
- /home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
- /home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/timers.h \
- /home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
- /home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h \
- /home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
-/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
+ /Users/michaelalex/Documents/Git/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
+ /Users/michaelalex/Documents/Git/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
+ /Users/michaelalex/Documents/Git/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
+ /Users/michaelalex/Documents/Git/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h \
+ /Users/michaelalex/Documents/Git/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
+ /Users/michaelalex/Documents/Git/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
+ /Users/michaelalex/Documents/Git/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
+ /Users/michaelalex/Documents/Git/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/timers.h \
+ /Users/michaelalex/Documents/Git/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
+ /Users/michaelalex/Documents/Git/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h \
+ /Users/michaelalex/Documents/Git/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
+/Users/michaelalex/Documents/Git/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
 ../Inc/FreeRTOSConfig.h:
-/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h:
-/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/portable.h:
-/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h:
-/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h:
-/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h:
-/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/task.h:
-/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/list.h:
-/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/timers.h:
-/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/task.h:
-/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h:
-/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/timers.h:
+/Users/michaelalex/Documents/Git/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h:
+/Users/michaelalex/Documents/Git/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/portable.h:
+/Users/michaelalex/Documents/Git/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h:
+/Users/michaelalex/Documents/Git/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h:
+/Users/michaelalex/Documents/Git/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h:
+/Users/michaelalex/Documents/Git/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/task.h:
+/Users/michaelalex/Documents/Git/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/list.h:
+/Users/michaelalex/Documents/Git/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/timers.h:
+/Users/michaelalex/Documents/Git/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/task.h:
+/Users/michaelalex/Documents/Git/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h:
+/Users/michaelalex/Documents/Git/AdvDSPWkSpace/2_Q_Usage/Middlewares/Third_Party/FreeRTOS/Source/include/timers.h:
