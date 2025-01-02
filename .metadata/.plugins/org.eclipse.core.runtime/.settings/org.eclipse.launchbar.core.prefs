@@ -9,6 +9,7 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:10_RealtimeDSP_SensorDataBlocks
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:11_FIR_Filter_Design\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:11_FIR_Filter_Design\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:12_MovingAverageFilter\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:12_MovingAverageFilter\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:1_FreeRTOSIntegration/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:1_FreeRTOSIntegration/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:1_Plot_Signal_ILA\ Debug/activeLaunchMode=debug
