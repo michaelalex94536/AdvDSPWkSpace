@@ -3,10 +3,10 @@
 	<section name="ImportExportAction">
 	</section>
 	<section name="WorkbenchPreferenceDialog">
-		<item key="DIALOG_X_ORIGIN" value="420"/>
-		<item key="DIALOG_Y_ORIGIN" value="28"/>
-		<item key="DIALOG_WIDTH" value="619"/>
-		<item key="DIALOG_HEIGHT" value="821"/>
-		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+		<item key="DIALOG_X_ORIGIN" value="145"/>
+		<item key="DIALOG_Y_ORIGIN" value="89"/>
+		<item key="DIALOG_WIDTH" value="934"/>
+		<item key="DIALOG_HEIGHT" value="696"/>
+		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>
 	</section>
 </section>

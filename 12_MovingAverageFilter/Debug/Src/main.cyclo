@@ -1,6 +1,6 @@
-../Src/main.c:67:5:main	2
-../Src/main.c:95:6:data_acq_task	1
-../Src/main.c:115:6:data_proc_task	1
-../Src/main.c:138:6:data_disp_task	1
-../Src/main.c:180:13:pseudo_dly	2
-../Src/main.c:187:13:fpu_enable	1
+../Src/main.c:65:5:main	2
+../Src/main.c:96:6:data_acq_task	1
+../Src/main.c:116:6:data_proc_task	1
+../Src/main.c:139:6:data_disp_task	1
+../Src/main.c:181:13:pseudo_dly	2
+../Src/main.c:188:13:fpu_enable	1

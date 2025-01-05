@@ -2,8 +2,6 @@
  *
  * 				12_MovingAverageFilter
  *
-
-
  */
 
 #include "stm32f4xx.h"
@@ -25,7 +23,6 @@ extern float _5hz_signal[HZ_5_SIG_LEN];
 float32_t output_signal_array[KHZ1_15_SIG_LEN];
 
 #define MA_FLTR_PTS		51
-
 
 static void pseudo_dly(int dly);
 static void fpu_enable(void);
@@ -63,6 +60,7 @@ const TickType_t millisec_to_ticks = pdMS_TO_TICKS(10);
 uint32_t g_adc_value;  			// Measured, raw ADC value - an unsigned integer
 float32_t f32_adc_value;		// ADC value converted to normalized float: range is -1.0 to 1.0
 
+float32_t in_signal, out_signal;
 
 int main(void)
 {
@@ -82,6 +80,9 @@ int main(void)
 		{
 			for(int i = 0; i <KHZ1_15_SIG_LEN; i++)
 			{
+				in_signal = input_signal_f32_1kHz_15kHz[i];
+				out_signal = output_signal_array[i];
+
 				printf("%f, ", input_signal_f32_1kHz_15kHz[i]);
 				printf("%f\r\n ", output_signal_array[i]);
 				pseudo_dly(30000);
