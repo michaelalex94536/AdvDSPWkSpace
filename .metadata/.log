@@ -7106,3 +7106,6 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-02-02 13:35:29.052
 !MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-02-02 14:03:44.150
+!MESSAGE Indexed 'DeleteMe' (20 sources, 82 headers) in 2.85 sec: 4,789 declarations; 22,864 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0072%)
