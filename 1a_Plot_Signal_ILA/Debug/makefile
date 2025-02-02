@@ -33,34 +33,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := 1_Plot_Signal_ILA
+BUILD_ARTIFACT_NAME := 1a_Plot_Signal_ILA
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-1_Plot_Signal_ILA.elf \
+1a_Plot_Signal_ILA.elf \
 
 MAP_FILES += \
-1_Plot_Signal_ILA.map \
+1a_Plot_Signal_ILA.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-1_Plot_Signal_ILA.list \
+1a_Plot_Signal_ILA.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: 1_Plot_Signal_ILA.elf secondary-outputs
+main-build: 1a_Plot_Signal_ILA.elf secondary-outputs
 
 # Tool invocations
-1_Plot_Signal_ILA.elf 1_Plot_Signal_ILA.map: $(OBJS) $(USER_OBJS) /home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/1_Plot_Signal_ILA/STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "1_Plot_Signal_ILA.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/1_Plot_Signal_ILA/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="1_Plot_Signal_ILA.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+1a_Plot_Signal_ILA.elf 1a_Plot_Signal_ILA.map: $(OBJS) $(USER_OBJS) /home/michael/Documents/STM32Code/AdvDSPWkSpace/1a_Plot_Signal_ILA/STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "1a_Plot_Signal_ILA.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/michael/Documents/STM32Code/AdvDSPWkSpace/1a_Plot_Signal_ILA/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="1a_Plot_Signal_ILA.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -69,14 +69,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-1_Plot_Signal_ILA.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "1_Plot_Signal_ILA.list"
+1a_Plot_Signal_ILA.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "1a_Plot_Signal_ILA.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) 1_Plot_Signal_ILA.elf 1_Plot_Signal_ILA.list 1_Plot_Signal_ILA.map default.size.stdout
+	-$(RM) 1a_Plot_Signal_ILA.elf 1a_Plot_Signal_ILA.list 1a_Plot_Signal_ILA.map default.size.stdout
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)

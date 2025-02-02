@@ -1,0 +1,10 @@
+17:45:55 **** Incremental Build of configuration Debug for project 1a_Plot_Signal_ILA ****
+make -j8 all 
+arm-none-eabi-size  1a_Plot_Signal_ILA.elf 
+   text	   data	    bss	    dec	    hex	filename
+    804	   1204	   1572	   3580	    dfc	1a_Plot_Signal_ILA.elf
+Finished building: default.size.stdout
+ 
+
+17:45:56 Build Finished. 0 errors, 0 warnings. (took 1s.241ms)
+

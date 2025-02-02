@@ -8,12 +8,12 @@
 #include "uart.h"
 #include "stm32f4xx.h"
 
-#define GPIOAEN					(1U << 0)		// GPIOA clock enable bit in AHB1ENR register
-#define UART2EN					(1U << 17)	// UART2 enable in APB1ENR register
+#define GPIOAEN				(1U << 0)		// GPIOA clock enable bit in AHB1ENR register
+#define UART2EN				(1U << 17)		// UART2 enable in APB1ENR register
 #define CR1_TE					(1U << 3)		// Enable USART transmit
-#define CR1_UE					(1U << 13)	// Enable USART
+#define CR1_UE					(1U << 13)		// Enable USART
 
-#define SR_TXE					(1U << 7)		// Transmit data register status
+#define SR_TXE					(1U << 7)			// Transmit data register status
 
 #define SYS_FREQ				16000000
 #define APB1_CLK				SYS_FREQ
@@ -40,7 +40,7 @@ void uart2_tx_init(void)
 	/*  Enable clock access to GPIOA on AHB1 bus  */
 	RCC->AHB1ENR |= GPIOAEN;
 
-	/*  Set PA2 mode to alternate function mode. (Set bits 5 and 4 to 0b10) */
+	/*  Set PA2 mode to alternate function mode. (Set bits 5 and 4 to 0b10, respectively) */
 	GPIOA->MODER |= (1U << 5);
 	GPIOA->MODER &= ~(1U << 4);
 

@@ -1,6 +1,0 @@
-../Src/main.c:60:5:main	16	static
-../Src/main.c:90:6:data_acq_task	16	static
-../Src/main.c:110:6:data_proc_task	16	static
-../Src/main.c:133:6:data_disp_task	16	static
-../Src/main.c:175:13:pseudo_dly	24	static
-../Src/main.c:182:13:fpu_enable	4	static

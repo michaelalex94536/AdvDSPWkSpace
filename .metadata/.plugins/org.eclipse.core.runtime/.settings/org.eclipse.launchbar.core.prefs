@@ -1,10 +1,12 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=linux
-configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:6_RealtimeDSP,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:12_MovingAverageFilter Debug
+activeLaunchTarget=null\:---
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:0a_Test Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:2_UART_Driver Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:1_Plot_Signal_ILA,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:1a_Plot_Signal_ILA,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:2a_UART_Driver Debug
 eclipse.preferences.version=1
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:0_Test\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:0_Test\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:0a_Test\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:10_RealtimeDSP_SensorDataBlocksV2\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:11_FIR_Filter_Design\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:11_FIR_Filter_Design\ Debug/activeLaunchTarget=null\:---
@@ -15,6 +17,8 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:1_FreeRTOSIntegration/activeLau
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:1_Plot_Signal_ILA\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:1_Plot_Signal_ILA\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:1_Plot_Signal_ILA/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:1_Plot_Signal_ILA/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:1a_Plot_Signal_ILA\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:2_Q_Usage\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:2_Q_Usage\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:2_UART_Driver\ Debug/activeLaunchMode=debug
@@ -34,3 +38,5 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:6_RealtimeDSPver2/activeLaunchM
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:8_RealtimeDSP_LiveData\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:9_RealtimeDSP_SensorDataBlocks\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:9_RealtimeDSP_SensorDataBlocks\ Debug/activeLaunchTarget=null\:---
+org.eclipse.launchbar.core.descriptorType.default\:1a_Plot_Signal_ILA\ Debug/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:1a_Plot_Signal_ILA\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

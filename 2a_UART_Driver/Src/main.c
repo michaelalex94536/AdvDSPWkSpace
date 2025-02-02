@@ -19,7 +19,7 @@ int main(void)
 
 	while(1)
 		{
-			//plot_input_signal();
+			plot_input_signal();
 
 			printf("Hello from STM32...\n\r");
 
