@@ -1,17 +1,17 @@
-18:10:13 **** Incremental Build of configuration Debug for project 2a_UART_Driver ****
+15:31:19 **** Incremental Build of configuration Debug for project 2a_UART_Driver ****
 make -j8 all 
-arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -c -I../Inc -I"/home/michael/Documents/STM32Code/AdvDSPWkSpace/2a_UART_Driver/chip_headers/CMSIS/Include" -I"/home/michael/Documents/STM32Code/AdvDSPWkSpace/2a_UART_Driver/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/uart.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -c -I../Inc -I"/home/michael/Documents/STM32Code/AdvDSPWkSpace/2a_UART_Driver/chip_headers/CMSIS/Include" -I"/home/michael/Documents/STM32Code/AdvDSPWkSpace/2a_UART_Driver/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
 arm-none-eabi-gcc -o "2a_UART_Driver.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/michael/Documents/STM32Code/AdvDSPWkSpace/2a_UART_Driver/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="2a_UART_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: 2a_UART_Driver.elf
  
 arm-none-eabi-size  2a_UART_Driver.elf 
 arm-none-eabi-objdump -h -S 2a_UART_Driver.elf  > "2a_UART_Driver.list"
    text	   data	    bss	    dec	    hex	filename
-   5304	   1296	   1904	   8504	   2138	2a_UART_Driver.elf
+   5312	   1296	   1904	   8512	   2140	2a_UART_Driver.elf
 Finished building: default.size.stdout
  
 Finished building: 2a_UART_Driver.list
  
 
-18:10:15 Build Finished. 0 errors, 0 warnings. (took 1s.388ms)
+15:31:21 Build Finished. 0 errors, 0 warnings. (took 1s.467ms)
 
