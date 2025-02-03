@@ -1,5 +1,5 @@
 /*
- *		Print waveform values to the serial port.
+ *		Print waveform values to the serial port for plotting with some other program
  */
 
 
