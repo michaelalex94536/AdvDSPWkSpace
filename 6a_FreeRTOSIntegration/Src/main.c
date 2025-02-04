@@ -30,7 +30,7 @@ static void fpu_enable(void);
 // Here are the variables to add to Live Expressions.  These are just counters.
 uint32_t Task1_profiler, Task2_profiler;
 
-// Here is where we can change task priorities
+// Here is where we can change task priorities.
 // The higher the number, the higher the task priority.
 int Task1_priority = 2;
 int Task2_priority = 2;
