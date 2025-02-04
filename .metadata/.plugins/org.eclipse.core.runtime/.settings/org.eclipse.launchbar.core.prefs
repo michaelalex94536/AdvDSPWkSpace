@@ -2,7 +2,7 @@ LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=linux
 activeLaunchTarget=null\:---
-configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:5_CMSIS_Test_Float32,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:5a_CMSIS_Test_Float32 Debug
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:6a_FreeRTOSIntegration
 eclipse.preferences.version=1
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:0_Test\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:0_Test\ Debug/activeLaunchTarget=null\:---
@@ -36,6 +36,7 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:6_RealtimeDSP/activeLaunchMode=
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:6_RealtimeDSP/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:6_RealtimeDSPver2\ (1)/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:6_RealtimeDSPver2/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:6a_FreeRTOSIntegration/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:8_RealtimeDSP_LiveData\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:9_RealtimeDSP_SensorDataBlocks\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:9_RealtimeDSP_SensorDataBlocks\ Debug/activeLaunchTarget=null\:---
