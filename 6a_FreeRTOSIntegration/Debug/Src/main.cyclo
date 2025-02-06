@@ -1,4 +1,4 @@
-../Src/main.c:38:5:main	1
-../Src/main.c:62:6:Task1	1
-../Src/main.c:73:6:Task2	1
-../Src/main.c:84:13:fpu_enable	1
+../Src/main.c:37:5:main	1
+../Src/main.c:60:6:Task1	1
+../Src/main.c:71:6:Task2	1
+../Src/main.c:82:13:fpu_enable	1

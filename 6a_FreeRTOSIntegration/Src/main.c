@@ -13,7 +13,6 @@
 
 #include "stm32f4xx.h"
 #include <stdio.h>
-#include "signals.h"
 #include "uart.h"
 #include "FreeRTOS.h"
 #include "task.h"
