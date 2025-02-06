@@ -1,13 +1,16 @@
 /*
- *  Here we plot using both the SWV and the serial port
+ *  Here we plot using both the SWV and the serial port if you wish
  *  The signal is a mix of 1 kHz and 15 kHz sine waves.
- *  Enabling both seems kind of slow...
+ *  Enabling both at the same time slows things down considerably.
+ *
+ *  In order to use float32_t data type, we need to include "arm_math.h"
  */
 
 #include "stm32f4xx.h"
 #include <stdio.h>
 #include "signals.h"
 #include "uart.h"
+#include "arm_math.h"
 
 extern float _5hz_signal[HZ_5_SIG_LEN];
 extern float32_t input_signal_f32_1kHz_15kHz[KHZ1_15_SIG_LEN] ;
@@ -28,8 +31,8 @@ int main(void)
 
 	while(1)
 	{
-			swv_plot_signal();
-			serial_plot_signal();
+		swv_plot_signal();
+		serial_plot_signal();
 	}
 
 
