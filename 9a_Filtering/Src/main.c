@@ -21,9 +21,9 @@
 #include "sine_generator.h"
 #include "lowpassfilter.h"
 
-#define SIGNAL_FREQ		10
-#define NOISE_FREQ		50
-#define SAMPLING_FREQ 	1000
+#define SIGNAL_FREQ			10
+#define NOISE_FREQ				50
+#define SAMPLING_FREQ 		1000
 
 extern float _5hz_signal[HZ_5_SIG_LEN];
 extern float32_t input_signal_f32_1kHz_15kHz[KHZ1_15_SIG_LEN] ;
@@ -94,11 +94,11 @@ int main(void)
 		filtered_sig_sample = lowpass_filter_exec(&corrupt_sig_sample);
 
 
-//  Use tabs between data for Tauno plotter to work
-		printf("%d\t ", (int)sine_sig_sample);
-		printf("%d\t", (int)noise_sig_sample);
-		printf("%d\t", (int)corrupt_sig_sample);
-		printf("%d\n\r", (int)filtered_sig_sample);
+//  Use commas to delimit data
+		printf("%d,", (int)sine_sig_sample);
+		printf("%d,", (int)noise_sig_sample);
+		printf("%d,", (int)corrupt_sig_sample);
+		printf("%d\n\r", (int) filtered_sig_sample);
 
 		pseudo_dly(9000);
 	}

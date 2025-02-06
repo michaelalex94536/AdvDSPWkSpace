@@ -56,6 +56,7 @@ q15_t low_pass_filter_coeff[FILTER_TAPS] =
 
 q15_t lowpass_filter_state[FILTER_TAPS + FILTER_BLOCK_LEN];
 
+// Create an instance of a Q15 FIR filter:
 arm_fir_instance_q15 lowpass_filter_set;
 
 void lowpass_filter_init(void)
@@ -70,7 +71,7 @@ void lowpass_filter_init(void)
 q15_t lowpass_filter_exec(q15_t * input)
 {
 	q15_t out;
-	arm_fir_q15(&lowpass_filter_set, input,&out, FILTER_BLOCK_LEN);
+	arm_fir_q15(&lowpass_filter_set, input, &out, FILTER_BLOCK_LEN);
 
 	return out;
 }
