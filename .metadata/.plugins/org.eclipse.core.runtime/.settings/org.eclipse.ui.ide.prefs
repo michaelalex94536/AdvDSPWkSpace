@@ -1,5 +1,9 @@
 EXIT_PROMPT_ON_CLOSE_LAST_WINDOW=false
 eclipse.preferences.version=1
+<<<<<<< HEAD
 platformState=1733257119139
+=======
+platformState=1738211993564
+>>>>>>> 9fe00b5696d837b95b9a9725ab4ca906728e49bc
 quickStart=false
 tipsAndTricks=true

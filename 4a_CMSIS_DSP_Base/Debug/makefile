@@ -33,34 +33,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := 4_CMSIS_DSP_Base
+BUILD_ARTIFACT_NAME := 4a_CMSIS_DSP_Base
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-4_CMSIS_DSP_Base.elf \
+4a_CMSIS_DSP_Base.elf \
 
 MAP_FILES += \
-4_CMSIS_DSP_Base.map \
+4a_CMSIS_DSP_Base.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-4_CMSIS_DSP_Base.list \
+4a_CMSIS_DSP_Base.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: 4_CMSIS_DSP_Base.elf secondary-outputs
+main-build: 4a_CMSIS_DSP_Base.elf secondary-outputs
 
 # Tool invocations
-4_CMSIS_DSP_Base.elf 4_CMSIS_DSP_Base.map: $(OBJS) $(USER_OBJS) /home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/4_CMSIS_DSP_Base/STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "4_CMSIS_DSP_Base.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/4_CMSIS_DSP_Base/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="4_CMSIS_DSP_Base.map" -Wl,--gc-sections -static -L"/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/4_CMSIS_DSP_Base/chip_headers/CMSIS/Lib/GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+4a_CMSIS_DSP_Base.elf 4a_CMSIS_DSP_Base.map: $(OBJS) $(USER_OBJS) /home/michael/Documents/STCode/AdvDSPWkSpace/4a_CMSIS_DSP_Base/STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "4a_CMSIS_DSP_Base.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/michael/Documents/STCode/AdvDSPWkSpace/4a_CMSIS_DSP_Base/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="4a_CMSIS_DSP_Base.map" -Wl,--gc-sections -static -L"/home/michael/Documents/STCode/AdvDSPWkSpace/4a_CMSIS_DSP_Base/chip_headers/CMSIS/Lib/GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -69,14 +69,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-4_CMSIS_DSP_Base.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "4_CMSIS_DSP_Base.list"
+4a_CMSIS_DSP_Base.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "4a_CMSIS_DSP_Base.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) 4_CMSIS_DSP_Base.elf 4_CMSIS_DSP_Base.list 4_CMSIS_DSP_Base.map default.size.stdout
+	-$(RM) 4a_CMSIS_DSP_Base.elf 4a_CMSIS_DSP_Base.list 4a_CMSIS_DSP_Base.map default.size.stdout
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)

@@ -59,8 +59,13 @@ all: main-build
 main-build: 2a_UART_Driver.elf secondary-outputs
 
 # Tool invocations
+<<<<<<< HEAD
 2a_UART_Driver.elf 2a_UART_Driver.map: $(OBJS) $(USER_OBJS) /home/michael/Documents/STM32Code/AdvDSPWkSpace/2a_UART_Driver/STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	arm-none-eabi-gcc -o "2a_UART_Driver.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/michael/Documents/STM32Code/AdvDSPWkSpace/2a_UART_Driver/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="2a_UART_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+=======
+2a_UART_Driver.elf 2a_UART_Driver.map: $(OBJS) $(USER_OBJS) /home/michael/Documents/STCode/AdvDSPWkSpace/2a_UART_Driver/STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "2a_UART_Driver.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/michael/Documents/STCode/AdvDSPWkSpace/2a_UART_Driver/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="2a_UART_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+>>>>>>> 9fe00b5696d837b95b9a9725ab4ca906728e49bc
 	@echo 'Finished building target: $@'
 	@echo ' '
 

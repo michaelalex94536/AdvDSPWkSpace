@@ -1,7 +1,7 @@
 /*
+ * 		"4a_CMSIS _DSP_BASE"
  *		Added CMSIS DSP support files and library
  */
-
 
 #include "stm32f4xx.h"
 #include <stdio.h>
@@ -11,9 +11,9 @@
 extern float _5hz_signal[HZ_5_SIG_LEN];
 float g_in_sig_sample;
 
-//void static plot_input_signal(void);
-void static pseudo_dly(int dly);
-void static fpu_enable(void);
+static void plot_input_signal(void);
+static void pseudo_dly(int dly);
+static void fpu_enable(void);
 
 int main(void)
 {
@@ -25,7 +25,7 @@ int main(void)
 
 	while(1)
 	{
-			//plot_input_signal();
+			//plot_input_signal();								//For sending data to SWV
 		for(int i = 0; i < HZ_5_SIG_LEN; i++)
 		{
 			printf("%f\r\n", _5hz_signal[i]);
@@ -36,8 +36,7 @@ int main(void)
 
 } // End of main
 
-/*
-void static plot_input_signal(void)
+static void plot_input_signal(void)
 {
 	for(int i = 0; i < HZ_5_SIG_LEN; i++)
 	{
@@ -45,9 +44,8 @@ void static plot_input_signal(void)
 		pseudo_dly(9000);
 	}
 }
-*/
 
-void static pseudo_dly(int dly)
+static void pseudo_dly(int dly)
 {
 	for(int i = 0; i < dly; i++){}
 }
