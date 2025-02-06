@@ -1,6 +1,6 @@
 /*
  *
- * 				Filtering.c
+ * 				9a_Filtering.c
  *
  * 		1) Generate sine waves using ARM biquad cascade IIR
  *
