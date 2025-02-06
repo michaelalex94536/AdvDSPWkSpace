@@ -28,7 +28,11 @@ C_DEPS += \
 
 # Each subdirectory must supply rules for building sources it contributes
 Src/%.o Src/%.su Src/%.cyclo: ../Src/%.c Src/subdir.mk
+<<<<<<< HEAD
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -c -I../Inc -I"/home/michael/Documents/STM32Code/AdvDSPWkSpace/2a_UART_Driver/chip_headers/CMSIS/Include" -I"/home/michael/Documents/STM32Code/AdvDSPWkSpace/2a_UART_Driver/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "$@"
+=======
+	arm-none-eabi-gcc "$<" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -c -I../Inc -I"/home/michael/Documents/STCode/AdvDSPWkSpace/2a_UART_Driver/chip_headers/CMSIS/Include" -I"/home/michael/Documents/STCode/AdvDSPWkSpace/2a_UART_Driver/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "$@"
+>>>>>>> 9f55a9437343cddf789b5bf99c5d0c9cf60499bb
 
 clean: clean-Src
 

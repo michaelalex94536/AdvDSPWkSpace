@@ -8,6 +8,7 @@
 #include "uart.h"
 #include "stm32f4xx.h"
 
+<<<<<<< HEAD
 #define GPIOAEN				(1U << 0)		// GPIOA clock enable bit in AHB1ENR register
 #define UART2EN				(1U << 17)		// UART2 enable in APB1ENR register
 #define CR1_TE					(1U << 3)		// Enable USART transmit
@@ -17,6 +18,16 @@
 
 #define SYS_FREQ				16000000
 #define APB1_CLK				SYS_FREQ
+=======
+#define GPIOAEN					(1U << 0)			// GPIOA clock enable bit in AHB1ENR register
+#define UART2EN					(1U << 17)			// UART2 enable bit in APB1ENR register
+#define CR1_TE						(1U << 3)			// Enable USART transmit bit
+#define CR1_UE						(1U << 13)			// Enable USART bit
+#define SR_TXE						(1U << 7)			// Transmit data register status bit
+
+#define SYS_FREQ					16000000			// Reset clock value as found in data sheet
+#define APB1_CLK					SYS_FREQ
+>>>>>>> 9f55a9437343cddf789b5bf99c5d0c9cf60499bb
 
 #define UART_BAUDRATE		115200
 
@@ -60,7 +71,7 @@ void uart2_tx_init(void)
 	/*  Configure baud rate  */
 	uart2_set_baudrate(APB1_CLK, UART_BAUDRATE);
 
-	/*  Configure data transfer direction for Tx  */
+	/*  Configure data transfer direction to Tx  */
 	USART2->CR1 |= CR1_TE;
 
 	/*  Enable UART module */
