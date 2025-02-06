@@ -24,7 +24,7 @@ float g_in_sig_sample;
 
 // static void swv_plot_signal(void);
 // static void serial_plot_signal(void);
-static void pseudo_dly(int dly);
+//static void pseudo_dly(int dly);
 static void fpu_enable(void);
 
 // Here are the variables to add to Live Expressions.  These are just counters.
@@ -194,14 +194,14 @@ static void serial_plot_signal(void)
 	}
 }
 
-*/
+
 
 static void pseudo_dly(int dly)
 {
 	for(int i = 0; i < dly; i++){}
 }
 
-
+*/
 
 static void fpu_enable(void)
 {
