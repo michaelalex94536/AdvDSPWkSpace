@@ -79,7 +79,7 @@ int main(void)
 			// swv_plot_signal();
 			// serial_plot_signal();
 
-		//  If you don't divide signal and noise by 2, corrupt signal will get clipped
+		//  If you don't divide signal and noise by 2, corrupt signal will get clipped - we are using q15.
 		sine_sig_sample = sine_calc_sample_q15(&signal_desc)/2;
 		noise_sig_sample = sine_calc_sample_q15(&noise_desc)/2;
 		corrupt_sig_sample = sine_sig_sample + noise_sig_sample;

@@ -5,7 +5,7 @@
 
 typedef struct
 {
-	// Biquad cascade IIR from ARM
+	// Biquad direct form cascade IIR from ARM
 	arm_biquad_casd_df1_inst_q15 iir_sine_generator_instance;
 	q15_t coeff[6];
 	q15_t state[4];
