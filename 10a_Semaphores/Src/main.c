@@ -1,6 +1,6 @@
 /*
  *
- * 				Semaphores.c
+ * 				10a_Semaphores.c
  *
  */
 
@@ -15,7 +15,7 @@
 #include "semphr.h"
 
 #define SIGNAL_FREQ		10
-#define NOISE_FREQ		50
+#define NOISE_FREQ			50
 #define SAMPLING_FREQ 	1000
 
 extern float _5hz_signal[HZ_5_SIG_LEN];
