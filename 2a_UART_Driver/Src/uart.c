@@ -27,7 +27,11 @@
 
 #define SYS_FREQ					16000000			// Reset clock value as found in data sheet
 #define APB1_CLK					SYS_FREQ
+<<<<<<< HEAD
 >>>>>>> 9fe00b5696d837b95b9a9725ab4ca906728e49bc
+=======
+>>>>>>> 9f55a9437343cddf789b5bf99c5d0c9cf60499bb
+>>>>>>> 91409407fd0e2a52a5f5f5d444b5b1241cb0db86
 
 #define UART_BAUDRATE		115200
 

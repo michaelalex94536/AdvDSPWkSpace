@@ -65,7 +65,11 @@ main-build: 2a_UART_Driver.elf secondary-outputs
 =======
 2a_UART_Driver.elf 2a_UART_Driver.map: $(OBJS) $(USER_OBJS) /home/michael/Documents/STCode/AdvDSPWkSpace/2a_UART_Driver/STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	arm-none-eabi-gcc -o "2a_UART_Driver.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/michael/Documents/STCode/AdvDSPWkSpace/2a_UART_Driver/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="2a_UART_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+<<<<<<< HEAD
 >>>>>>> 9fe00b5696d837b95b9a9725ab4ca906728e49bc
+=======
+>>>>>>> 9f55a9437343cddf789b5bf99c5d0c9cf60499bb
+>>>>>>> 91409407fd0e2a52a5f5f5d444b5b1241cb0db86
 	@echo 'Finished building target: $@'
 	@echo ' '
 

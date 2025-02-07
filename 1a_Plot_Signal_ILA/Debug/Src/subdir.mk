@@ -29,7 +29,11 @@ Src/%.o Src/%.su Src/%.cyclo: ../Src/%.c Src/subdir.mk
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -c -I../Inc -I"/home/michael/Documents/STM32Code/AdvDSPWkSpace/1a_Plot_Signal_ILA/chip_headers/CMSIS/Include" -I"/home/michael/Documents/STM32Code/AdvDSPWkSpace/1a_Plot_Signal_ILA/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "$@"
 =======
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -c -I../Inc -I"/home/michael/Documents/STCode/AdvDSPWkSpace/1a_Plot_Signal_ILA/chip_headers/CMSIS/Include" -I"/home/michael/Documents/STCode/AdvDSPWkSpace/1a_Plot_Signal_ILA/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "$@"
+<<<<<<< HEAD
 >>>>>>> 9fe00b5696d837b95b9a9725ab4ca906728e49bc
+=======
+>>>>>>> 9f55a9437343cddf789b5bf99c5d0c9cf60499bb
+>>>>>>> 91409407fd0e2a52a5f5f5d444b5b1241cb0db86
 
 clean: clean-Src
 

@@ -14,11 +14,15 @@
     <stringAttribute key="com.st.stm32cube.ide.mcu.debug.launch.ip_address_local" value="localhost"/>
     <booleanAttribute key="com.st.stm32cube.ide.mcu.debug.launch.limit_swo_clock.enabled" value="false"/>
     <stringAttribute key="com.st.stm32cube.ide.mcu.debug.launch.limit_swo_clock.value" value=""/>
+<<<<<<< HEAD:9a_Filtering/Debug/0088e26705e1001f1434a95122cf034b
 <<<<<<<< HEAD:9a_Filtering/Debug/0088e26705e1001f1434a95122cf034b
     <stringAttribute key="com.st.stm32cube.ide.mcu.debug.launch.loadList" value="{&quot;fItems&quot;:[{&quot;fIsFromMainTab&quot;:true,&quot;fPath&quot;:&quot;&quot;,&quot;fProjectName&quot;:&quot;1a_Plot_Signal_ILA&quot;,&quot;fPerformBuild&quot;:true,&quot;fDownload&quot;:true,&quot;fLoadSymbols&quot;:true}]}"/>
 ========
     <stringAttribute key="com.st.stm32cube.ide.mcu.debug.launch.loadList" value="{&quot;fItems&quot;:[{&quot;fIsFromMainTab&quot;:true,&quot;fPath&quot;:&quot;Debug/10a_Semaphores.elf&quot;,&quot;fProjectName&quot;:&quot;10a_Semaphores&quot;,&quot;fPerformBuild&quot;:true,&quot;fDownload&quot;:true,&quot;fLoadSymbols&quot;:true}]}"/>
 >>>>>>>> 9fe00b5696d837b95b9a9725ab4ca906728e49bc:10a_Semaphores/10a_Semaphores Debug.launch
+=======
+    <stringAttribute key="com.st.stm32cube.ide.mcu.debug.launch.loadList" value="{&quot;fItems&quot;:[{&quot;fIsFromMainTab&quot;:true,&quot;fPath&quot;:&quot;&quot;,&quot;fProjectName&quot;:&quot;1a_Plot_Signal_ILA&quot;,&quot;fPerformBuild&quot;:true,&quot;fDownload&quot;:true,&quot;fLoadSymbols&quot;:true}]}"/>
+>>>>>>> 91409407fd0e2a52a5f5f5d444b5b1241cb0db86:.metadata/.plugins/org.eclipse.core.resources/.history/5b/0088e26705e1001f1434a95122cf034b
     <stringAttribute key="com.st.stm32cube.ide.mcu.debug.launch.override_start_address_mode" value="default"/>
     <stringAttribute key="com.st.stm32cube.ide.mcu.debug.launch.remoteCommand" value="target remote"/>
     <booleanAttribute key="com.st.stm32cube.ide.mcu.debug.launch.startServer" value="true"/>
@@ -38,11 +42,15 @@
     <booleanAttribute key="com.st.stm32cube.ide.mcu.debug.stlink.enable_shared_stlink" value="false"/>
     <stringAttribute key="com.st.stm32cube.ide.mcu.debug.stlink.frequency" value="0"/>
     <booleanAttribute key="com.st.stm32cube.ide.mcu.debug.stlink.halt_all_on_reset" value="false"/>
+<<<<<<< HEAD:9a_Filtering/Debug/0088e26705e1001f1434a95122cf034b
 <<<<<<<< HEAD:9a_Filtering/Debug/0088e26705e1001f1434a95122cf034b
     <stringAttribute key="com.st.stm32cube.ide.mcu.debug.stlink.log_file" value="/home/michael/Documents/STM32Code/AdvDSPWkSpace/1a_Plot_Signal_ILA/Debug/st-link_gdbserver_log.txt"/>
 ========
     <stringAttribute key="com.st.stm32cube.ide.mcu.debug.stlink.log_file" value="/home/michael/Documents/STCode/AdvDSPWkSpace/10a_Semaphores/Debug/st-link_gdbserver_log.txt"/>
 >>>>>>>> 9fe00b5696d837b95b9a9725ab4ca906728e49bc:10a_Semaphores/10a_Semaphores Debug.launch
+=======
+    <stringAttribute key="com.st.stm32cube.ide.mcu.debug.stlink.log_file" value="/home/michael/Documents/STM32Code/AdvDSPWkSpace/1a_Plot_Signal_ILA/Debug/st-link_gdbserver_log.txt"/>
+>>>>>>> 91409407fd0e2a52a5f5f5d444b5b1241cb0db86:.metadata/.plugins/org.eclipse.core.resources/.history/5b/0088e26705e1001f1434a95122cf034b
     <stringAttribute key="com.st.stm32cube.ide.mcu.debug.stlink.low_power_debug" value="enable"/>
     <stringAttribute key="com.st.stm32cube.ide.mcu.debug.stlink.max_halt_delay" value="2"/>
     <stringAttribute key="com.st.stm32cube.ide.mcu.debug.stlink.reset_strategy" value="connect_under_reset"/>
@@ -76,6 +84,7 @@
     <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_START_MODE" value="remote"/>
     <booleanAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN" value="true"/>
     <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN_SYMBOL" value="main"/>
+<<<<<<< HEAD:9a_Filtering/Debug/0088e26705e1001f1434a95122cf034b
 <<<<<<<< HEAD:9a_Filtering/Debug/0088e26705e1001f1434a95122cf034b
     <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value=""/>
     <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="1a_Plot_Signal_ILA"/>
@@ -83,15 +92,23 @@
     <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="Debug/10a_Semaphores.elf"/>
     <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="10a_Semaphores"/>
 >>>>>>>> 9fe00b5696d837b95b9a9725ab4ca906728e49bc:10a_Semaphores/10a_Semaphores Debug.launch
+=======
+    <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value=""/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="1a_Plot_Signal_ILA"/>
+>>>>>>> 91409407fd0e2a52a5f5f5d444b5b1241cb0db86:.metadata/.plugins/org.eclipse.core.resources/.history/5b/0088e26705e1001f1434a95122cf034b
     <booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="true"/>
     <stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value=""/>
     <booleanAttribute key="org.eclipse.debug.core.ATTR_FORCE_SYSTEM_CONSOLE_ENCODING" value="false"/>
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<<<<<<< HEAD:9a_Filtering/Debug/0088e26705e1001f1434a95122cf034b
 <<<<<<<< HEAD:9a_Filtering/Debug/0088e26705e1001f1434a95122cf034b
         <listEntry value="/1a_Plot_Signal_ILA"/>
 ========
         <listEntry value="/10a_Semaphores"/>
 >>>>>>>> 9fe00b5696d837b95b9a9725ab4ca906728e49bc:10a_Semaphores/10a_Semaphores Debug.launch
+=======
+        <listEntry value="/1a_Plot_Signal_ILA"/>
+>>>>>>> 91409407fd0e2a52a5f5f5d444b5b1241cb0db86:.metadata/.plugins/org.eclipse.core.resources/.history/5b/0088e26705e1001f1434a95122cf034b
     </listAttribute>
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
         <listEntry value="4"/>

@@ -5880,7 +5880,11 @@ java.lang.NullPointerException: Cannot read the array length because "containers
 !SESSION 2025-01-31 16:07:40.608 -----------------------------------------------
 =======
 !SESSION 2025-02-02 20:31:29.276 -----------------------------------------------
+<<<<<<< HEAD
 >>>>>>> 9fe00b5696d837b95b9a9725ab4ca906728e49bc
+=======
+>>>>>>> 9f55a9437343cddf789b5bf99c5d0c9cf60499bb
+>>>>>>> 91409407fd0e2a52a5f5f5d444b5b1241cb0db86
 eclipse.buildId=Version 1.17.0
 java.version=21.0.3
 java.vendor=Eclipse Adoptium
@@ -5893,7 +5897,11 @@ Command-line arguments:  -data /home/michael/Documents/STM32Code/AdvDSPWkSpace -
 Command-line arguments:  -data /home/michael/Documents/STCode/AdvDSPWkSpace -os linux -ws gtk -arch x86_64
 
 !ENTRY org.eclipse.e4.ui.workbench 4 0 2025-02-02 20:31:31.043
+<<<<<<< HEAD
 >>>>>>> 9fe00b5696d837b95b9a9725ab4ca906728e49bc
+=======
+>>>>>>> 9f55a9437343cddf789b5bf99c5d0c9cf60499bb
+>>>>>>> 91409407fd0e2a52a5f5f5d444b5b1241cb0db86
 !MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler' from bundle '250'
 !STACK 0
 java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.16.200.v20231030-2045
@@ -6652,6 +6660,7 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 !MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
 
 !ENTRY org.eclipse.cdt.dsf.gdb 4 4 2025-02-01 17:46:13.434
+<<<<<<< HEAD
 =======
 !ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-02-02 20:31:32.990
 !MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
@@ -6667,6 +6676,8 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 
 !ENTRY org.eclipse.cdt.dsf.gdb 4 4 2025-02-02 21:11:32.172
 >>>>>>> 9fe00b5696d837b95b9a9725ab4ca906728e49bc
+=======
+>>>>>>> 91409407fd0e2a52a5f5f5d444b5b1241cb0db86
 !MESSAGE NullPointerException while trying to calculated source lookup path. This can be ignored if it occurs while terminating a debug session. See Bug 500988.
 !STACK 0
 java.lang.NullPointerException: Cannot read the array length because "containers" is null
@@ -6685,13 +6696,19 @@ java.lang.NullPointerException: Cannot read the array length because "containers
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 91409407fd0e2a52a5f5f5d444b5b1241cb0db86
 !ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-02-01 17:57:09.582
 !MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
 
 !ENTRY org.eclipse.cdt.dsf.gdb 4 4 2025-02-01 17:58:20.771
+<<<<<<< HEAD
 =======
 !ENTRY org.eclipse.cdt.dsf.gdb 4 4 2025-02-02 21:11:59.201
 >>>>>>> 9fe00b5696d837b95b9a9725ab4ca906728e49bc
+=======
+>>>>>>> 91409407fd0e2a52a5f5f5d444b5b1241cb0db86
 !MESSAGE NullPointerException while trying to calculated source lookup path. This can be ignored if it occurs while terminating a debug session. See Bug 500988.
 !STACK 0
 java.lang.NullPointerException: Cannot read the array length because "containers" is null
@@ -6710,6 +6727,9 @@ java.lang.NullPointerException: Cannot read the array length because "containers
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 91409407fd0e2a52a5f5f5d444b5b1241cb0db86
 !ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-02-01 17:59:30.935
 !MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
 
@@ -6717,6 +6737,7 @@ java.lang.NullPointerException: Cannot read the array length because "containers
 !MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
 
 !ENTRY org.eclipse.cdt.dsf.gdb 4 4 2025-02-01 18:01:40.786
+<<<<<<< HEAD
 =======
 !ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2025-02-02 22:30:27.148
 !MESSAGE Won't launch debug session since we failed to locate the binary.
@@ -6781,6 +6802,8 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 
 !ENTRY org.eclipse.cdt.dsf.gdb 4 4 2025-02-03 22:33:05.098
 >>>>>>> 9fe00b5696d837b95b9a9725ab4ca906728e49bc
+=======
+>>>>>>> 91409407fd0e2a52a5f5f5d444b5b1241cb0db86
 !MESSAGE NullPointerException while trying to calculated source lookup path. This can be ignored if it occurs while terminating a debug session. See Bug 500988.
 !STACK 0
 java.lang.NullPointerException: Cannot read the array length because "containers" is null
@@ -6799,6 +6822,9 @@ java.lang.NullPointerException: Cannot read the array length because "containers
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 91409407fd0e2a52a5f5f5d444b5b1241cb0db86
 !ENTRY org.eclipse.cdt.dsf 4 10005 2025-02-01 18:01:43.341
 !MESSAGE Request for monitor: 'RequestMonitor (com.st.stm32cube.ide.mcu.debug.swv.core.ui.StartTraceHandler$1@66fc94b1): Status ERROR: org.eclipse.cdt.dsf code=10004  children=[Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Failed to execute MI command:
 ptype g_in_sig_sample
@@ -6970,6 +6996,21 @@ java.lang.Exception: Project '0a_Test' is not open.
 !MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
 
 !ENTRY org.eclipse.cdt.dsf.gdb 4 4 2025-02-01 18:08:04.840
+=======
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-02-02 20:31:32.990
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-02-02 20:31:32.991
+!MESSAGE Log4j2 initialized with config file /home/michael/Documents/STCode/AdvDSPWkSpace/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-02-02 20:31:38.228
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-02-02 21:10:49.973
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 4 2025-02-02 21:11:32.172
+>>>>>>> 9f55a9437343cddf789b5bf99c5d0c9cf60499bb
 !MESSAGE NullPointerException while trying to calculated source lookup path. This can be ignored if it occurs while terminating a debug session. See Bug 500988.
 !STACK 0
 java.lang.NullPointerException: Cannot read the array length because "containers" is null
@@ -6979,6 +7020,7 @@ java.lang.NullPointerException: Cannot read the array length because "containers
 	at org.eclipse.cdt.dsf.gdb.service.GDBSourceLookup.getSubstitutionsPaths(GDBSourceLookup.java:124)
 	at org.eclipse.cdt.dsf.gdb.service.GDBSourceLookup.sourceContainersChanged(GDBSourceLookup.java:139)
 	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupParticipant.sourceContainersChangedOnDispatchThread(GdbSourceLookupParticipant.java:120)
+<<<<<<< HEAD
 	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupParticipant$1.run(GdbSourceLookupParticipant.java:85)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
@@ -7111,13 +7153,57 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-02-02 13:23:15.057
 !MESSAGE Started RMI Server, listening on port 41337
 !SESSION 2025-02-02 13:33:25.136 -----------------------------------------------
+=======
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupParticipant$1.run(GdbSourceLookupParticipant.java:85)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 4 2025-02-02 21:11:59.201
+!MESSAGE NullPointerException while trying to calculated source lookup path. This can be ignored if it occurs while terminating a debug session. See Bug 500988.
+!STACK 0
+java.lang.NullPointerException: Cannot read the array length because "containers" is null
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupDirector.collectSubstitutionsPaths(GdbSourceLookupDirector.java:102)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupDirector.collectSubstitutionsPaths(GdbSourceLookupDirector.java:146)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupDirector.getSubstitutionsPaths(GdbSourceLookupDirector.java:72)
+	at org.eclipse.cdt.dsf.gdb.service.GDBSourceLookup.getSubstitutionsPaths(GDBSourceLookup.java:124)
+	at org.eclipse.cdt.dsf.gdb.service.GDBSourceLookup.sourceContainersChanged(GDBSourceLookup.java:139)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupParticipant.sourceContainersChangedOnDispatchThread(GdbSourceLookupParticipant.java:120)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupParticipant$1.run(GdbSourceLookupParticipant.java:85)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2025-02-02 22:30:27.148
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-02-02 22:31:35.886
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-02-02 22:34:22.597
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2025-02-02 23:18:19.857
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+!SESSION 2025-02-03 21:29:29.707 -----------------------------------------------
+>>>>>>> 9f55a9437343cddf789b5bf99c5d0c9cf60499bb
 eclipse.buildId=Version 1.17.0
 java.version=21.0.3
 java.vendor=Eclipse Adoptium
 BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
 Command-line arguments:  -os linux -ws gtk -arch x86_64
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.e4.ui.workbench 4 0 2025-02-02 13:33:28.902
+=======
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2025-02-03 21:29:31.827
+>>>>>>> 9f55a9437343cddf789b5bf99c5d0c9cf60499bb
 !MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler' from bundle '250'
 !STACK 0
 java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.16.200.v20231030-2045
@@ -7148,6 +7234,7 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
+<<<<<<< HEAD
 !ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-02-02 13:33:31.386
 !MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
 
@@ -7211,6 +7298,39 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 !STACK 0
 java.lang.Exception: Resource '/DeleteMe' does not exist.
 =======
+<<<<<<< HEAD
+=======
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-02-03 21:29:33.855
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-02-03 21:29:33.856
+!MESSAGE Log4j2 initialized with config file /home/michael/Documents/STCode/AdvDSPWkSpace/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-02-03 21:29:42.690
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-02-03 22:31:40.916
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 4 2025-02-03 22:33:05.098
+!MESSAGE NullPointerException while trying to calculated source lookup path. This can be ignored if it occurs while terminating a debug session. See Bug 500988.
+!STACK 0
+java.lang.NullPointerException: Cannot read the array length because "containers" is null
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupDirector.collectSubstitutionsPaths(GdbSourceLookupDirector.java:102)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupDirector.collectSubstitutionsPaths(GdbSourceLookupDirector.java:146)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupDirector.getSubstitutionsPaths(GdbSourceLookupDirector.java:72)
+	at org.eclipse.cdt.dsf.gdb.service.GDBSourceLookup.getSubstitutionsPaths(GDBSourceLookup.java:124)
+	at org.eclipse.cdt.dsf.gdb.service.GDBSourceLookup.sourceContainersChanged(GDBSourceLookup.java:139)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupParticipant.sourceContainersChangedOnDispatchThread(GdbSourceLookupParticipant.java:120)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupParticipant$1.run(GdbSourceLookupParticipant.java:85)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+>>>>>>> 91409407fd0e2a52a5f5f5d444b5b1241cb0db86
 !ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-02-03 22:33:39.488
 !MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
 
@@ -7263,7 +7383,11 @@ java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.IPath.to
 !MESSAGE Exception occurred while saving project preferences: /1_FreeRTOSIntegration/.settings/com.st.stm32cube.ide.mcu.sfrview.prefs.
 !STACK 1
 org.eclipse.core.internal.resources.ResourceException(/1_FreeRTOSIntegration)[368]: java.lang.Exception: Resource '/1_FreeRTOSIntegration' does not exist.
+<<<<<<< HEAD
 >>>>>>> 9fe00b5696d837b95b9a9725ab4ca906728e49bc
+=======
+>>>>>>> 9f55a9437343cddf789b5bf99c5d0c9cf60499bb
+>>>>>>> 91409407fd0e2a52a5f5f5d444b5b1241cb0db86
 	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
 	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
 	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:367)
@@ -7296,6 +7420,23 @@ org.eclipse.core.internal.resources.ResourceException(/1_FreeRTOSIntegration)[36
 	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.lambda$4(WBWRenderer.java:570)
 	at org.eclipse.swt.events.ShellListener$2.shellClosed(ShellListener.java:102)
 	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:102)
+<<<<<<< HEAD
+=======
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5854)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1529)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1555)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1538)
+	at org.eclipse.swt.widgets.Shell.closeWidget(Shell.java:693)
+	at org.eclipse.swt.widgets.Shell.gtk_delete_event(Shell.java:1536)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:2495)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6883)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6162)
+	at org.eclipse.swt.internal.gtk3.GTK3.gtk_main_do_event(Native Method)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1597)
+	at org.eclipse.swt.internal.gtk3.GTK3.gtk_main_iteration_do(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4513)
+>>>>>>> 91409407fd0e2a52a5f5f5d444b5b1241cb0db86
 =======
 	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:43)
 	at org.eclipse.core.internal.resources.Folder.create(Folder.java:101)
@@ -7341,6 +7482,10 @@ org.eclipse.core.internal.resources.ResourceException(/1_FreeRTOSIntegration)[36
 	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1529)
 	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5064)
 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4516)
+<<<<<<< HEAD
+=======
+>>>>>>> 9f55a9437343cddf789b5bf99c5d0c9cf60499bb
+>>>>>>> 91409407fd0e2a52a5f5f5d444b5b1241cb0db86
 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
@@ -7361,6 +7506,79 @@ org.eclipse.core.internal.resources.ResourceException(/1_FreeRTOSIntegration)[36
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+!SESSION 2025-02-02 15:26:28.350 -----------------------------------------------
+eclipse.buildId=Version 1.17.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2025-02-02 15:26:31.330
+!MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler' from bundle '250'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.16.200.v20231030-2045
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:541)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:536)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:622)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:89)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:37)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:276)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:577)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-02-02 15:26:34.373
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-02-02 15:26:34.374
+!MESSAGE Log4j2 initialized with config file /home/michael/Documents/STM32Code/AdvDSPWkSpace/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-02-02 15:26:40.615
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2025-02-03 13:58:51.537 -----------------------------------------------
+eclipse.buildId=Version 1.17.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2025-02-03 13:58:54.398
+!MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler' from bundle '250'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.16.200.v20231030-2045
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:541)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:536)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:622)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:89)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:37)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:276)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:577)
+=======
+>>>>>>> 91409407fd0e2a52a5f5f5d444b5b1241cb0db86
 !SUBENTRY 1 org.eclipse.core.resources 4 368 2025-02-03 23:02:50.915
 !MESSAGE Resource '/1_FreeRTOSIntegration' does not exist.
 !STACK 0
@@ -7419,6 +7637,7 @@ java.lang.Exception: Resource '/1_FreeRTOSIntegration' does not exist.
 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
 	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
 	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+<<<<<<< HEAD
 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
 	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
 	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
@@ -8011,6 +8230,9 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:37)
 	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:276)
 	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:577)
+=======
+>>>>>>> 9f55a9437343cddf789b5bf99c5d0c9cf60499bb
+>>>>>>> 91409407fd0e2a52a5f5f5d444b5b1241cb0db86
 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
 	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
 	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
@@ -8026,6 +8248,7 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
+<<<<<<< HEAD
 
 !ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-02-03 13:58:57.314
 !MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
@@ -8045,4 +8268,8 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 !ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-02-03 14:09:40.535
 !MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
 =======
+<<<<<<< HEAD
 >>>>>>> 9fe00b5696d837b95b9a9725ab4ca906728e49bc
+=======
+>>>>>>> 9f55a9437343cddf789b5bf99c5d0c9cf60499bb
+>>>>>>> 91409407fd0e2a52a5f5f5d444b5b1241cb0db86

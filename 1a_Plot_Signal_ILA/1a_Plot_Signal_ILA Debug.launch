@@ -14,11 +14,19 @@
     <stringAttribute key="com.st.stm32cube.ide.mcu.debug.launch.ip_address_local" value="localhost"/>
     <booleanAttribute key="com.st.stm32cube.ide.mcu.debug.launch.limit_swo_clock.enabled" value="false"/>
     <stringAttribute key="com.st.stm32cube.ide.mcu.debug.launch.limit_swo_clock.value" value=""/>
+<<<<<<< HEAD
 <<<<<<<< HEAD:2a_UART_Driver/2a_UART_Driver Debug.launch
     <stringAttribute key="com.st.stm32cube.ide.mcu.debug.launch.loadList" value="{&quot;fItems&quot;:[{&quot;fIsFromMainTab&quot;:true,&quot;fPath&quot;:&quot;Debug/2a_UART_Driver.elf&quot;,&quot;fProjectName&quot;:&quot;2a_UART_Driver&quot;,&quot;fPerformBuild&quot;:true,&quot;fDownload&quot;:true,&quot;fLoadSymbols&quot;:true}]}"/>
 ========
     <stringAttribute key="com.st.stm32cube.ide.mcu.debug.launch.loadList" value="{&quot;fItems&quot;:[{&quot;fIsFromMainTab&quot;:true,&quot;fPath&quot;:&quot;Debug/1_Plot_Signal_ILA.elf&quot;,&quot;fProjectName&quot;:&quot;1a_Plot_Signal_ILA&quot;,&quot;fPerformBuild&quot;:true,&quot;fDownload&quot;:true,&quot;fLoadSymbols&quot;:true}]}"/>
 >>>>>>>> 9fe00b5696d837b95b9a9725ab4ca906728e49bc:1a_Plot_Signal_ILA/1a_Plot_Signal_ILA Debug.launch
+=======
+<<<<<<< HEAD:2a_UART_Driver/2a_UART_Driver Debug.launch
+    <stringAttribute key="com.st.stm32cube.ide.mcu.debug.launch.loadList" value="{&quot;fItems&quot;:[{&quot;fIsFromMainTab&quot;:true,&quot;fPath&quot;:&quot;Debug/2a_UART_Driver.elf&quot;,&quot;fProjectName&quot;:&quot;2a_UART_Driver&quot;,&quot;fPerformBuild&quot;:true,&quot;fDownload&quot;:true,&quot;fLoadSymbols&quot;:true}]}"/>
+=======
+    <stringAttribute key="com.st.stm32cube.ide.mcu.debug.launch.loadList" value="{&quot;fItems&quot;:[{&quot;fIsFromMainTab&quot;:true,&quot;fPath&quot;:&quot;Debug/1_Plot_Signal_ILA.elf&quot;,&quot;fProjectName&quot;:&quot;1a_Plot_Signal_ILA&quot;,&quot;fPerformBuild&quot;:true,&quot;fDownload&quot;:true,&quot;fLoadSymbols&quot;:true}]}"/>
+>>>>>>> 9f55a9437343cddf789b5bf99c5d0c9cf60499bb:1a_Plot_Signal_ILA/1a_Plot_Signal_ILA Debug.launch
+>>>>>>> 91409407fd0e2a52a5f5f5d444b5b1241cb0db86
     <stringAttribute key="com.st.stm32cube.ide.mcu.debug.launch.override_start_address_mode" value="default"/>
     <stringAttribute key="com.st.stm32cube.ide.mcu.debug.launch.remoteCommand" value="target remote"/>
     <booleanAttribute key="com.st.stm32cube.ide.mcu.debug.launch.startServer" value="true"/>
@@ -39,6 +47,7 @@
     <booleanAttribute key="com.st.stm32cube.ide.mcu.debug.stlink.enable_shared_stlink" value="false"/>
     <stringAttribute key="com.st.stm32cube.ide.mcu.debug.stlink.frequency" value="0"/>
     <booleanAttribute key="com.st.stm32cube.ide.mcu.debug.stlink.halt_all_on_reset" value="false"/>
+<<<<<<< HEAD
 <<<<<<<< HEAD:2a_UART_Driver/2a_UART_Driver Debug.launch
     <stringAttribute key="com.st.stm32cube.ide.mcu.debug.stlink.log_file" value="/home/michael/Documents/STM32Code/AdvDSPWkSpace/2a_UART_Driver/Debug/st-link_gdbserver_log.txt"/>
     <stringAttribute key="com.st.stm32cube.ide.mcu.debug.stlink.low_power_debug" value="enable"/>
@@ -46,6 +55,15 @@
     <stringAttribute key="com.st.stm32cube.ide.mcu.debug.stlink.log_file" value="/home/michael/Documents/STCode/AdvDSPWkSpace/1a_Plot_Signal_ILA/Debug/st-link_gdbserver_log.txt"/>
     <stringAttribute key="com.st.stm32cube.ide.mcu.debug.stlink.low_power_debug" value="disable"/>
 >>>>>>>> 9fe00b5696d837b95b9a9725ab4ca906728e49bc:1a_Plot_Signal_ILA/1a_Plot_Signal_ILA Debug.launch
+=======
+<<<<<<< HEAD:2a_UART_Driver/2a_UART_Driver Debug.launch
+    <stringAttribute key="com.st.stm32cube.ide.mcu.debug.stlink.log_file" value="/home/michael/Documents/STM32Code/AdvDSPWkSpace/2a_UART_Driver/Debug/st-link_gdbserver_log.txt"/>
+    <stringAttribute key="com.st.stm32cube.ide.mcu.debug.stlink.low_power_debug" value="enable"/>
+=======
+    <stringAttribute key="com.st.stm32cube.ide.mcu.debug.stlink.log_file" value="/home/michael/Documents/STCode/AdvDSPWkSpace/1a_Plot_Signal_ILA/Debug/st-link_gdbserver_log.txt"/>
+    <stringAttribute key="com.st.stm32cube.ide.mcu.debug.stlink.low_power_debug" value="disable"/>
+>>>>>>> 9f55a9437343cddf789b5bf99c5d0c9cf60499bb:1a_Plot_Signal_ILA/1a_Plot_Signal_ILA Debug.launch
+>>>>>>> 91409407fd0e2a52a5f5f5d444b5b1241cb0db86
     <stringAttribute key="com.st.stm32cube.ide.mcu.debug.stlink.max_halt_delay" value="2"/>
     <stringAttribute key="com.st.stm32cube.ide.mcu.debug.stlink.reset_strategy" value="connect_under_reset"/>
     <booleanAttribute key="com.st.stm32cube.ide.mcu.debug.stlink.stlink_check_serial_number" value="false"/>
@@ -88,7 +106,11 @@
     <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_START_MODE" value="remote"/>
     <booleanAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN" value="true"/>
     <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN_SYMBOL" value="main"/>
+<<<<<<< HEAD
 <<<<<<<< HEAD:2a_UART_Driver/2a_UART_Driver Debug.launch
+=======
+<<<<<<< HEAD:2a_UART_Driver/2a_UART_Driver Debug.launch
+>>>>>>> 91409407fd0e2a52a5f5f5d444b5b1241cb0db86
     <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="Debug/2a_UART_Driver.elf"/>
     <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="2a_UART_Driver"/>
     <booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="false"/>
@@ -96,7 +118,11 @@
     <booleanAttribute key="org.eclipse.debug.core.ATTR_FORCE_SYSTEM_CONSOLE_ENCODING" value="false"/>
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
         <listEntry value="/2a_UART_Driver"/>
+<<<<<<< HEAD
 ========
+=======
+=======
+>>>>>>> 91409407fd0e2a52a5f5f5d444b5b1241cb0db86
     <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="Debug/1_Plot_Signal_ILA.elf"/>
     <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="1a_Plot_Signal_ILA"/>
     <booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="true"/>
@@ -104,17 +130,29 @@
     <booleanAttribute key="org.eclipse.debug.core.ATTR_FORCE_SYSTEM_CONSOLE_ENCODING" value="false"/>
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
         <listEntry value="/1a_Plot_Signal_ILA"/>
+<<<<<<< HEAD
 >>>>>>>> 9fe00b5696d837b95b9a9725ab4ca906728e49bc:1a_Plot_Signal_ILA/1a_Plot_Signal_ILA Debug.launch
+=======
+>>>>>>> 9f55a9437343cddf789b5bf99c5d0c9cf60499bb:1a_Plot_Signal_ILA/1a_Plot_Signal_ILA Debug.launch
+>>>>>>> 91409407fd0e2a52a5f5f5d444b5b1241cb0db86
     </listAttribute>
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
         <listEntry value="4"/>
     </listAttribute>
     <stringAttribute key="org.eclipse.debug.core.source_locator_id" value="org.eclipse.cdt.debug.core.sourceLocator"/>
+<<<<<<< HEAD
 <<<<<<<< HEAD:2a_UART_Driver/2a_UART_Driver Debug.launch
     <stringAttribute key="org.eclipse.debug.core.source_locator_memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;sourceLookupDirector&gt;&#10;    &lt;sourceContainers duplicates=&quot;false&quot;&gt;&#10;        &lt;container memento=&quot;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot; standalone=&amp;quot;no&amp;quot;?&amp;gt;&amp;#10;&amp;lt;default/&amp;gt;&amp;#10;&quot; typeId=&quot;org.eclipse.debug.core.containerType.default&quot;/&gt;&#10;        &lt;container memento=&quot;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot; standalone=&amp;quot;no&amp;quot;?&amp;gt;&amp;#10;&amp;lt;mapping backend_enabled=&amp;quot;true&amp;quot; name=&amp;quot;Found Mappings&amp;quot;&amp;gt;&amp;#10;    &amp;lt;mapEntry memento=&amp;quot;&amp;amp;lt;?xml version=&amp;amp;quot;1.0&amp;amp;quot; encoding=&amp;amp;quot;UTF-8&amp;amp;quot; standalone=&amp;amp;quot;no&amp;amp;quot;?&amp;amp;gt;&amp;amp;#10;&amp;amp;lt;mapEntry backendPath=&amp;amp;quot;/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/2_UART_Driver/Debug/../Src/&amp;amp;quot; localPath=&amp;amp;quot;/home/michael/Documents/STM32Code/AdvDSPWkSpace/2a_UART_Driver/Src/&amp;amp;quot;/&amp;amp;gt;&amp;amp;#10;&amp;quot;/&amp;gt;&amp;#10;&amp;lt;/mapping&amp;gt;&amp;#10;&quot; typeId=&quot;org.eclipse.cdt.debug.core.containerType.mapping&quot;/&gt;&#10;    &lt;/sourceContainers&gt;&#10;&lt;/sourceLookupDirector&gt;&#10;"/>
 ========
     <stringAttribute key="org.eclipse.debug.core.source_locator_memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;sourceLookupDirector&gt;&#10;    &lt;sourceContainers duplicates=&quot;false&quot;&gt;&#10;        &lt;container memento=&quot;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot; standalone=&amp;quot;no&amp;quot;?&amp;gt;&amp;#10;&amp;lt;default/&amp;gt;&amp;#10;&quot; typeId=&quot;org.eclipse.debug.core.containerType.default&quot;/&gt;&#10;        &lt;container memento=&quot;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot; standalone=&amp;quot;no&amp;quot;?&amp;gt;&amp;#10;&amp;lt;mapping backend_enabled=&amp;quot;true&amp;quot; name=&amp;quot;Found Mappings&amp;quot;&amp;gt;&amp;#10;    &amp;lt;mapEntry memento=&amp;quot;&amp;amp;lt;?xml version=&amp;amp;quot;1.0&amp;amp;quot; encoding=&amp;amp;quot;UTF-8&amp;amp;quot; standalone=&amp;amp;quot;no&amp;amp;quot;?&amp;amp;gt;&amp;amp;#10;&amp;amp;lt;mapEntry backendPath=&amp;amp;quot;/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/1_Plot_Signal_ILA/Debug/../Src/&amp;amp;quot; localPath=&amp;amp;quot;/home/michael/Documents/STCode/AdvDSPWkSpace/1a_Plot_Signal_ILA/Src/&amp;amp;quot;/&amp;amp;gt;&amp;amp;#10;&amp;quot;/&amp;gt;&amp;#10;&amp;lt;/mapping&amp;gt;&amp;#10;&quot; typeId=&quot;org.eclipse.cdt.debug.core.containerType.mapping&quot;/&gt;&#10;    &lt;/sourceContainers&gt;&#10;&lt;/sourceLookupDirector&gt;&#10;"/>
 >>>>>>>> 9fe00b5696d837b95b9a9725ab4ca906728e49bc:1a_Plot_Signal_ILA/1a_Plot_Signal_ILA Debug.launch
+=======
+<<<<<<< HEAD:2a_UART_Driver/2a_UART_Driver Debug.launch
+    <stringAttribute key="org.eclipse.debug.core.source_locator_memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;sourceLookupDirector&gt;&#10;    &lt;sourceContainers duplicates=&quot;false&quot;&gt;&#10;        &lt;container memento=&quot;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot; standalone=&amp;quot;no&amp;quot;?&amp;gt;&amp;#10;&amp;lt;default/&amp;gt;&amp;#10;&quot; typeId=&quot;org.eclipse.debug.core.containerType.default&quot;/&gt;&#10;        &lt;container memento=&quot;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot; standalone=&amp;quot;no&amp;quot;?&amp;gt;&amp;#10;&amp;lt;mapping backend_enabled=&amp;quot;true&amp;quot; name=&amp;quot;Found Mappings&amp;quot;&amp;gt;&amp;#10;    &amp;lt;mapEntry memento=&amp;quot;&amp;amp;lt;?xml version=&amp;amp;quot;1.0&amp;amp;quot; encoding=&amp;amp;quot;UTF-8&amp;amp;quot; standalone=&amp;amp;quot;no&amp;amp;quot;?&amp;amp;gt;&amp;amp;#10;&amp;amp;lt;mapEntry backendPath=&amp;amp;quot;/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/2_UART_Driver/Debug/../Src/&amp;amp;quot; localPath=&amp;amp;quot;/home/michael/Documents/STM32Code/AdvDSPWkSpace/2a_UART_Driver/Src/&amp;amp;quot;/&amp;amp;gt;&amp;amp;#10;&amp;quot;/&amp;gt;&amp;#10;&amp;lt;/mapping&amp;gt;&amp;#10;&quot; typeId=&quot;org.eclipse.cdt.debug.core.containerType.mapping&quot;/&gt;&#10;    &lt;/sourceContainers&gt;&#10;&lt;/sourceLookupDirector&gt;&#10;"/>
+=======
+    <stringAttribute key="org.eclipse.debug.core.source_locator_memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;sourceLookupDirector&gt;&#10;    &lt;sourceContainers duplicates=&quot;false&quot;&gt;&#10;        &lt;container memento=&quot;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot; standalone=&amp;quot;no&amp;quot;?&amp;gt;&amp;#10;&amp;lt;default/&amp;gt;&amp;#10;&quot; typeId=&quot;org.eclipse.debug.core.containerType.default&quot;/&gt;&#10;        &lt;container memento=&quot;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot; standalone=&amp;quot;no&amp;quot;?&amp;gt;&amp;#10;&amp;lt;mapping backend_enabled=&amp;quot;true&amp;quot; name=&amp;quot;Found Mappings&amp;quot;&amp;gt;&amp;#10;    &amp;lt;mapEntry memento=&amp;quot;&amp;amp;lt;?xml version=&amp;amp;quot;1.0&amp;amp;quot; encoding=&amp;amp;quot;UTF-8&amp;amp;quot; standalone=&amp;amp;quot;no&amp;amp;quot;?&amp;amp;gt;&amp;amp;#10;&amp;amp;lt;mapEntry backendPath=&amp;amp;quot;/home/michael/Documents/Udemy/AdvDSPonARM/AdvDSPWkSpace/1_Plot_Signal_ILA/Debug/../Src/&amp;amp;quot; localPath=&amp;amp;quot;/home/michael/Documents/STCode/AdvDSPWkSpace/1a_Plot_Signal_ILA/Src/&amp;amp;quot;/&amp;amp;gt;&amp;amp;#10;&amp;quot;/&amp;gt;&amp;#10;&amp;lt;/mapping&amp;gt;&amp;#10;&quot; typeId=&quot;org.eclipse.cdt.debug.core.containerType.mapping&quot;/&gt;&#10;    &lt;/sourceContainers&gt;&#10;&lt;/sourceLookupDirector&gt;&#10;"/>
+>>>>>>> 9f55a9437343cddf789b5bf99c5d0c9cf60499bb:1a_Plot_Signal_ILA/1a_Plot_Signal_ILA Debug.launch
+>>>>>>> 91409407fd0e2a52a5f5f5d444b5b1241cb0db86
     <stringAttribute key="org.eclipse.dsf.launch.MEMORY_BLOCKS" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&lt;memoryBlockExpressionList context=&quot;reserved-for-future-use&quot;/&gt;"/>
     <stringAttribute key="process_factory_id" value="com.st.stm32cube.ide.mcu.debug.launch.HardwareDebugProcessFactory"/>
 </launchConfiguration>
