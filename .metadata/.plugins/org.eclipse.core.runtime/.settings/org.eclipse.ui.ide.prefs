@@ -1,9 +1,8 @@
+=\=\=\=\=\=\=
+<<<<<<<=HEAD
+>>>>>>>=9f55a9437343cddf789b5bf99c5d0c9cf60499bb
 EXIT_PROMPT_ON_CLOSE_LAST_WINDOW=false
 eclipse.preferences.version=1
-<<<<<<< HEAD
-platformState=1733257119116
-=======
-platformState=1738211993564
->>>>>>> 9f55a9437343cddf789b5bf99c5d0c9cf60499bb
+platformState=1661027349330
 quickStart=false
 tipsAndTricks=true
