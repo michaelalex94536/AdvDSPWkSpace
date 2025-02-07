@@ -63,7 +63,8 @@ int main(void)
 	/*    Scale ADC values from -1 to +1   */
 	for(int i = 0; i< BLOCK_SIZE; i++)
 	{
-		f32_sensor_data[i] = ((float32_t)(src_sensor_data[i] & 0xFFF)/(0xFFF/2)) - 1.0;
+		// Scaling data: divide by 4095/2 and subtract 1.0
+		f32_sensor_data[i] = ((float32_t)(src_sensor_data[i] & 0xFFF)/(0xFFF >> 1)) - 1.0;
 	}
 
 	/*    Convert float 32 data type to q data type            */
@@ -71,7 +72,7 @@ int main(void)
 
 	/*    Do some DSP in fixed point       */
 
-	/*    Convert q to float point         */
+	/*    Convert q data back to floating point         */
 	arm_q31_to_float(q31_sensor_data, f32_final_sensor_data, BLOCK_SIZE);
 
 	/*    Convert float to uint32_t  - and don't forget to rescale!      */
@@ -79,8 +80,9 @@ int main(void)
 
 	for(int i = 0; i< BLOCK_SIZE; i++)
 	{
-		// Rescale the float32_t data - remember it comes in normalized
-		temp_data = (f32_final_sensor_data[i] + 1)*(0xFFF/2);
+		// Rescale the float32_t data - remember it comes in normalized, so we have to
+		// add 1.0 and multiply by 4095/2
+		temp_data = (f32_final_sensor_data[i] + 1)*(0xFFF >> 1);
 
 		//  Round to the nearest integer
 		u32_final_sensor_data[i] = (uint32_t)(temp_data + 0.50);

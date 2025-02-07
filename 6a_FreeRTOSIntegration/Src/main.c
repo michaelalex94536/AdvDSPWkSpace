@@ -13,18 +13,13 @@
 
 #include "stm32f4xx.h"
 #include <stdio.h>
-#include "signals.h"
 #include "uart.h"
 #include "FreeRTOS.h"
 #include "task.h"
 
-extern float _5hz_signal[HZ_5_SIG_LEN];
-extern float32_t input_signal_f32_1kHz_15kHz[KHZ1_15_SIG_LEN] ;
-float g_in_sig_sample;
 
-// static void swv_plot_signal(void);
-// static void serial_plot_signal(void);
-// static void pseudo_dly(int dly);
+
+
 static void fpu_enable(void);
 
 // Here are the variables to add to Live Expressions.  These are just counters.
@@ -32,7 +27,7 @@ uint32_t Task1_profiler, Task2_profiler;
 
 // Here is where we can change task priorities.
 // The higher the number, the higher the task priority.
-int Task1_priority = 2;
+int Task1_priority = 1;
 int Task2_priority = 2;
 
 // Here are the task names
@@ -56,10 +51,8 @@ int main(void)
 
 	while(1)
 	{
-			// swv_plot_signal();
-			// serial_plot_signal();
-	}
 
+	}
 
 } // End of main
 
@@ -85,36 +78,6 @@ void Task2(void *pvParameters)
 
 }
 
-
-/*
-
-// Function to plot using the SWV
-static void swv_plot_signal(void)
-{
-	for(int i = 0; i < KHZ1_15_SIG_LEN; i++)
-	{
-		g_in_sig_sample = input_signal_f32_1kHz_15kHz[i];
-		pseudo_dly(9000);
-	}
-}
-
-// Function to plot using the serial port
-static void serial_plot_signal(void)
-{
-	for(int i = 0; i < KHZ1_15_SIG_LEN; i++)
-	{
-		printf("%f\r\n", input_signal_f32_1kHz_15kHz[i]);
-		pseudo_dly(9000);
-	}
-}
-
-
-static void pseudo_dly(int dly)
-{
-	for(int i = 0; i < dly; i++){}
-}
-
-*/
 
 static void fpu_enable(void)
 {

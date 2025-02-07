@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchHistory>
     <launchGroup id="org.eclipse.debug.ui.launchGroup.debug">
+<<<<<<< HEAD
         <mruHistory>
 <<<<<<< HEAD
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/2a_UART_Driver/2a_UART_Driver Debug.launch&quot;/&gt;&#10;"/>
@@ -8,6 +9,9 @@
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/6a_FreeRTOSIntegration/6a_FreeRTOSIntegration.launch&quot;/&gt;&#10;"/>
 >>>>>>> 9f55a9437343cddf789b5bf99c5d0c9cf60499bb
         </mruHistory>
+=======
+        <mruHistory/>
+>>>>>>> ec4d98f13383575572cc0c5d68b71b335edff918
         <favorites/>
     </launchGroup>
     <launchGroup id="org.eclipse.debug.ui.launchGroup.profile">
@@ -19,6 +23,7 @@
         <favorites/>
     </launchGroup>
     <launchGroup id="org.eclipse.debug.ui.launchGroup.run">
+<<<<<<< HEAD
         <mruHistory>
 <<<<<<< HEAD
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/2a_UART_Driver/2a_UART_Driver Debug.launch&quot;/&gt;&#10;"/>
@@ -26,6 +31,9 @@
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/6a_FreeRTOSIntegration/6a_FreeRTOSIntegration.launch&quot;/&gt;&#10;"/>
 >>>>>>> 9f55a9437343cddf789b5bf99c5d0c9cf60499bb
         </mruHistory>
+=======
+        <mruHistory/>
+>>>>>>> ec4d98f13383575572cc0c5d68b71b335edff918
         <favorites/>
     </launchGroup>
 </launchHistory>

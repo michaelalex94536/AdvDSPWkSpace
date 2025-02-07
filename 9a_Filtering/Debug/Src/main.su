@@ -1,0 +1,14 @@
+<<<<<<< HEAD
+../Src/main.c:74:5:main	16	static
+../Src/main.c:132:6:data_acq_task	16	static
+../Src/main.c:153:6:data_proc_task	16	static
+../Src/main.c:172:6:data_disp_task	16	static
+../Src/main.c:216:13:pseudo_dly	24	static
+../Src/main.c:221:13:fpu_enable	4	static
+=======
+../Src/main.c:61:5:main	16	static
+../Src/main.c:110:6:Task1	16	static,ignoring_inline_asm
+../Src/main.c:122:6:Task2	16	static,ignoring_inline_asm
+../Src/main.c:158:13:pseudo_dly	24	static
+../Src/main.c:165:13:fpu_enable	4	static
+>>>>>>> ec4d98f13383575572cc0c5d68b71b335edff918
