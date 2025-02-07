@@ -40,10 +40,20 @@ void static plot_input_signal(void)
 void static pseudo_dly(int dly)
 {
 	for(int i = 0; i < dly; i++){}
-
 }
 
 
+// For sending data to SWV via ITM.  If enabled, this function
+// prevents printing to the USART !
+/*int _write(int file, char *ptr, int len)
+ {
+	 int DataIdx;
+	 for (DataIdx = 0; DataIdx < len; DataIdx++)
+	 {
+		 ITM_SendChar(*ptr++);
+	 }
+	 return len;
+ }*/
 
 
 
