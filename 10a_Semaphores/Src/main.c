@@ -30,8 +30,6 @@ static void fpu_enable(void);
 // Here are the variables to add to Live Expressions.  These are just counters.
 uint32_t Task1_profiler, Task2_profiler, Task3_profiler, Task4_profiler;
 
-// Name a semaphore
-SemaphoreHandle_t xBinarySemaphore;
 
 // Here is where we can change task priorities
 // The higher the number, the higher the task priority.
@@ -58,6 +56,9 @@ q15_t corrupt_sig_sample;
 // Post-filtered corrupt signal
 q15_t filtered_sig_sample;
 
+// Name a handle to a semaphore
+SemaphoreHandle_t xBinarySemaphore;
+
 int main(void)
 {
 	// Enable FPU
@@ -66,18 +67,18 @@ int main(void)
 	// Initialize the UART
 	uart2_tx_init();
 
+	// Create the semaphore
+	xBinarySemaphore = xSemaphoreCreateBinary();
+
 	// Create several tasks
 	xTaskCreate(data_acq_task, "Get signals", 100, NULL, Task1_priority, NULL);
 	xTaskCreate(data_proc_task, "Noise and signal", 100, NULL, Task2_priority, NULL);
 	xTaskCreate(data_disp_task, "Combine signals", 100, NULL, Task3_priority, NULL);
 	xTaskCreate(data_filt_task, "Filter signals", 100, NULL, Task4_priority, NULL);
 
-	//Create the semaphore
-	xBinarySemaphore = xSemaphoreCreateBinary();
 
 	// Must start the scheduler or nothing happens!
 	vTaskStartScheduler();
-
 
 
 /*  This code never runs when we use RTOS
